@@ -1,0 +1,3 @@
+﻿Swashbuckle.AspNetCore
+dapper
+Serilog.Extensions.Logging.File

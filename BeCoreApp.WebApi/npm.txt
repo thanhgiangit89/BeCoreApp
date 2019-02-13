@@ -1,0 +1,2 @@
+﻿AutoMapper.Extensions.Microsoft.DependencyInjection
+Swashbuckle.AspNetCore

@@ -1,0 +1,390 @@
+2019-01-23T21:46:26.7480523+07:00 0HLK0ETQU4VJS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js.map   (ca22a1cb)
+2019-01-23T21:46:26.7480261+07:00 0HLK0ETQU4VJU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js.map   (ca22a1cb)
+2019-01-23T21:46:26.7479793+07:00 0HLK0ETQU4VJT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/toastr.js.map   (ca22a1cb)
+2019-01-23T21:46:26.8407340+07:00 0HLK0ETQU4VJT:00000001 [INF] Request finished in 121.0884ms 404  (791a596a)
+2019-01-23T21:46:26.8408753+07:00 0HLK0ETQU4VJU:00000001 [INF] Request finished in 121.53ms 404  (791a596a)
+2019-01-23T21:46:26.9073527+07:00 0HLK0ETQU4VJS:00000001 [INF] Request finished in 188.6827ms 404  (791a596a)
+2019-01-23T21:46:26.9785026+07:00 0HLK0ETQU4VJT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/chartist.css.map   (ca22a1cb)
+2019-01-23T21:46:26.9783983+07:00 0HLK0ETQU4VJU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css.map   (ca22a1cb)
+2019-01-23T21:46:26.9802663+07:00 0HLK0ETQU4VJT:00000002 [INF] Request finished in 2.2469ms 404  (791a596a)
+2019-01-23T21:46:26.9802935+07:00 0HLK0ETQU4VJU:00000002 [INF] Request finished in 2.1425ms 404  (791a596a)
+2019-01-23T22:07:20.1729562+07:00 0HLK0ETQU4VJV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/toastr.js.map   (ca22a1cb)
+2019-01-23T22:07:20.1737077+07:00 0HLK0ETQU4VK0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js.map   (ca22a1cb)
+2019-01-23T22:07:20.1742542+07:00 0HLK0ETQU4VK1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js.map   (ca22a1cb)
+2019-01-23T22:07:20.1744346+07:00 0HLK0ETQU4VJV:00000001 [INF] Request finished in 1.6424ms 404  (791a596a)
+2019-01-23T22:07:20.1747384+07:00 0HLK0ETQU4VK0:00000001 [INF] Request finished in 1.0969ms 404  (791a596a)
+2019-01-23T22:07:20.1768953+07:00 0HLK0ETQU4VK1:00000001 [INF] Request finished in 2.6679ms 404  (791a596a)
+2019-01-23T22:07:20.2775049+07:00 0HLK0ETQU4VK0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/chartist.css.map   (ca22a1cb)
+2019-01-23T22:07:20.2793694+07:00 0HLK0ETQU4VK0:00000002 [INF] Request finished in 2.215ms 404  (791a596a)
+2019-01-23T22:07:20.2795874+07:00 0HLK0ETQU4VJV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css.map   (ca22a1cb)
+2019-01-23T22:07:20.2828623+07:00 0HLK0ETQU4VJV:00000002 [INF] Request finished in 3.2688ms 404  (791a596a)
+2019-01-23T22:09:37.2307427+07:00 0HLK0ETQU4VK3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js.map   (ca22a1cb)
+2019-01-23T22:09:37.2310187+07:00 0HLK0ETQU4VK2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/toastr.js.map   (ca22a1cb)
+2019-01-23T22:09:37.2322797+07:00 0HLK0ETQU4VK2:00000001 [INF] Request finished in 1.9924ms 404  (791a596a)
+2019-01-23T22:09:37.2322962+07:00 0HLK0ETQU4VK3:00000001 [INF] Request finished in 1.6408ms 404  (791a596a)
+2019-01-23T22:09:37.2333192+07:00 0HLK0ETQU4VK2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js.map   (ca22a1cb)
+2019-01-23T22:09:37.2341998+07:00 0HLK0ETQU4VK2:00000002 [INF] Request finished in 1.0774ms 404  (791a596a)
+2019-01-23T22:09:37.3493134+07:00 0HLK0ETQU4VK3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/chartist.css.map   (ca22a1cb)
+2019-01-23T22:09:37.3521036+07:00 0HLK0ETQU4VK3:00000002 [INF] Request finished in 3.0827ms 404  (791a596a)
+2019-01-23T22:09:37.3525015+07:00 0HLK0ETQU4VK2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css.map   (ca22a1cb)
+2019-01-23T22:09:37.3534983+07:00 0HLK0ETQU4VK2:00000003 [INF] Request finished in 0.9998ms 404  (791a596a)
+2019-01-23T22:11:42.6608838+07:00 0HLK0ETQU4VK4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/toastr.js.map   (ca22a1cb)
+2019-01-23T22:11:42.6621427+07:00 0HLK0ETQU4VK4:00000001 [INF] Request finished in 1.3447ms 404  (791a596a)
+2019-01-23T22:11:42.6649690+07:00 0HLK0ETQU4VK5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js.map   (ca22a1cb)
+2019-01-23T22:11:42.6649916+07:00 0HLK0ETQU4VK4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js.map   (ca22a1cb)
+2019-01-23T22:11:42.6659319+07:00 0HLK0ETQU4VK5:00000001 [INF] Request finished in 1.0337ms 404  (791a596a)
+2019-01-23T22:11:42.6665991+07:00 0HLK0ETQU4VK4:00000002 [INF] Request finished in 1.6362ms 404  (791a596a)
+2019-01-23T22:11:42.8075857+07:00 0HLK0ETQU4VK5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/chartist.css.map   (ca22a1cb)
+2019-01-23T22:11:42.8098465+07:00 0HLK0ETQU4VK5:00000002 [INF] Request finished in 2.4839ms 404  (791a596a)
+2019-01-23T22:11:42.8110103+07:00 0HLK0ETQU4VK4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css.map   (ca22a1cb)
+2019-01-23T22:11:42.8140468+07:00 0HLK0ETQU4VK4:00000003 [INF] Request finished in 3.0719ms 404  (791a596a)
+2019-01-23T22:13:33.3694736+07:00 0HLK0ETQU4VK6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/toastr.js.map   (ca22a1cb)
+2019-01-23T22:13:33.3698936+07:00 0HLK0ETQU4VK7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js.map   (ca22a1cb)
+2019-01-23T22:13:33.3705264+07:00 0HLK0ETQU4VK6:00000001 [INF] Request finished in 1.189ms 404  (791a596a)
+2019-01-23T22:13:33.3710564+07:00 0HLK0ETQU4VK7:00000001 [INF] Request finished in 1.1879ms 404  (791a596a)
+2019-01-23T22:13:33.3806857+07:00 0HLK0ETQU4VK6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js.map   (ca22a1cb)
+2019-01-23T22:13:33.3816398+07:00 0HLK0ETQU4VK6:00000002 [INF] Request finished in 0.97ms 404  (791a596a)
+2019-01-23T22:13:33.5307428+07:00 0HLK0ETQU4VK7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/chartist.css.map   (ca22a1cb)
+2019-01-23T22:13:33.5317786+07:00 0HLK0ETQU4VK7:00000002 [INF] Request finished in 1.1756ms 404  (791a596a)
+2019-01-23T22:13:33.5330103+07:00 0HLK0ETQU4VK6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css.map   (ca22a1cb)
+2019-01-23T22:13:33.5354428+07:00 0HLK0ETQU4VK6:00000003 [INF] Request finished in 2.526ms 404  (791a596a)
+2019-01-23T22:14:30.7439095+07:00 0HLK0ETQU4VK7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/toastr.js.map   (ca22a1cb)
+2019-01-23T22:14:30.7441660+07:00 0HLK0ETQU4VK6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js.map   (ca22a1cb)
+2019-01-23T22:14:30.7453551+07:00 0HLK0ETQU4VK6:00000004 [INF] Request finished in 1.2846ms 404  (791a596a)
+2019-01-23T22:14:30.7489288+07:00 0HLK0ETQU4VK7:00000003 [INF] Request finished in 5.0958ms 404  (791a596a)
+2019-01-23T22:14:30.7504555+07:00 0HLK0ETQU4VK6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js.map   (ca22a1cb)
+2019-01-23T22:14:30.7518809+07:00 0HLK0ETQU4VK6:00000005 [INF] Request finished in 1.4609ms 404  (791a596a)
+2019-01-23T22:14:30.8768197+07:00 0HLK0ETQU4VK7:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/chartist.css.map   (ca22a1cb)
+2019-01-23T22:14:30.8772819+07:00 0HLK0ETQU4VK6:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css.map   (ca22a1cb)
+2019-01-23T22:14:30.8775297+07:00 0HLK0ETQU4VK7:00000004 [INF] Request finished in 0.7412ms 404  (791a596a)
+2019-01-23T22:14:30.8777836+07:00 0HLK0ETQU4VK6:00000006 [INF] Request finished in 0.5243ms 404  (791a596a)
+2019-01-23T22:46:22.6237921+07:00 0HLK0ETQU4VK8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/index.html   (ca22a1cb)
+2019-01-23T22:46:22.6713777+07:00 0HLK0ETQU4VK8:00000001 [INF] Sending file. Request path: '"/admin-side/RealEstate/index.html"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\index.html"' (27b0a520)
+2019-01-23T22:46:22.6720892+07:00 0HLK0ETQU4VK8:00000001 [INF] Request finished in 49.9194ms 200 text/html (791a596a)
+2019-01-23T22:46:22.7194574+07:00 0HLK0ETQU4VK8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/vendors.bundle.css   (ca22a1cb)
+2019-01-23T22:46:22.7224981+07:00 0HLK0ETQU4VK8:00000002 [INF] The file "/admin-side/RealEstate/css/vendors.bundle.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7227489+07:00 0HLK0ETQU4VK8:00000002 [INF] Request finished in 3.2986ms 304 text/css (791a596a)
+2019-01-23T22:46:22.7253156+07:00 0HLK0ETQU4VK8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/logo.png   (ca22a1cb)
+2019-01-23T22:46:22.7268346+07:00 0HLK0ETQU4VK8:00000003 [INF] The file "/admin-side/RealEstate/image/logo.png" was not modified (f1f8d725)
+2019-01-23T22:46:22.7270773+07:00 0HLK0ETQU4VK8:00000003 [INF] Request finished in 2.0258ms 304 image/png (791a596a)
+2019-01-23T22:46:22.7271523+07:00 0HLK0ETQU4VK9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/leaflet.css   (ca22a1cb)
+2019-01-23T22:46:22.7278570+07:00 0HLK0ETQU4VK9:00000001 [INF] The file "/admin-side/RealEstate/css/leaflet.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7280205+07:00 0HLK0ETQU4VK9:00000001 [INF] Request finished in 0.9993ms 304 text/css (791a596a)
+2019-01-23T22:46:22.7295556+07:00 0HLK0ETQU4VK8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/style1.bundle.css   (ca22a1cb)
+2019-01-23T22:46:22.7295952+07:00 0HLK0ETQU4VK9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/bootstrap.min.css   (ca22a1cb)
+2019-01-23T22:46:22.7307456+07:00 0HLK0ETQU4VK8:00000004 [INF] The file "/admin-side/RealEstate/css/style1.bundle.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7313275+07:00 0HLK0ETQU4VK8:00000004 [INF] Request finished in 1.7961ms 304 text/css (791a596a)
+2019-01-23T22:46:22.7319243+07:00 0HLK0ETQU4VK9:00000002 [INF] The file "/admin-side/RealEstate/css/bootstrap.min.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7322538+07:00 0HLK0ETQU4VK9:00000002 [INF] Request finished in 2.7239ms 304 text/css (791a596a)
+2019-01-23T22:46:22.7351911+07:00 0HLK0ETQU4VKA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/style.css   (ca22a1cb)
+2019-01-23T22:46:22.7360146+07:00 0HLK0ETQU4VKA:00000001 [INF] The file "/admin-side/RealEstate/css/style.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7361519+07:00 0HLK0ETQU4VKA:00000001 [INF] Request finished in 1.1196ms 304 text/css (791a596a)
+2019-01-23T22:46:22.7391597+07:00 0HLK0ETQU4VK8:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/jquery.scrollbar.css   (ca22a1cb)
+2019-01-23T22:46:22.7396321+07:00 0HLK0ETQU4VK8:00000005 [INF] The file "/admin-side/RealEstate/css/jquery.scrollbar.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7397385+07:00 0HLK0ETQU4VK8:00000005 [INF] Request finished in 0.6384ms 304 text/css (791a596a)
+2019-01-23T22:46:22.7430222+07:00 0HLK0ETQU4VK9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/fontawesome-all.min.css   (ca22a1cb)
+2019-01-23T22:46:22.7438792+07:00 0HLK0ETQU4VK9:00000003 [INF] The file "/admin-side/RealEstate/css/fontawesome-all.min.css" was not modified (f1f8d725)
+2019-01-23T22:46:22.7440710+07:00 0HLK0ETQU4VK9:00000003 [INF] Request finished in 1.0784ms 304 text/css (791a596a)
+2019-01-23T22:46:23.1669988+07:00 0HLK0ETQU4VKA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/~/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-01-23T22:46:23.2502851+07:00 0HLK0ETQU4VKA:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-01-23T22:46:23.3216062+07:00 0HLK0ETQU4VK8:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/jquery-3.3.1.min.js   (ca22a1cb)
+2019-01-23T22:46:23.3230569+07:00 0HLK0ETQU4VK8:00000006 [INF] The file "/admin-side/RealEstate/js/jquery-3.3.1.min.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3244310+07:00 0HLK0ETQU4VK8:00000006 [INF] Request finished in 1.6305ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3267967+07:00 0HLK0ETQU4VK9:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/popper.min.js   (ca22a1cb)
+2019-01-23T22:46:23.3275195+07:00 0HLK0ETQU4VK9:00000004 [INF] The file "/admin-side/RealEstate/js/popper.min.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3278911+07:00 0HLK0ETQU4VK9:00000004 [INF] Request finished in 0.9217ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3336752+07:00 0HLK0ETQU4VK8:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.js   (ca22a1cb)
+2019-01-23T22:46:23.3341169+07:00 0HLK0ETQU4VK8:00000007 [INF] The file "/admin-side/RealEstate/js/leaflet.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3342259+07:00 0HLK0ETQU4VK8:00000007 [INF] Request finished in 0.6307ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3385408+07:00 0HLK0ETQU4VK8:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/owl.carousel.min.js   (ca22a1cb)
+2019-01-23T22:46:23.3412067+07:00 0HLK0ETQU4VKC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/custom.js   (ca22a1cb)
+2019-01-23T22:46:23.3414946+07:00 0HLK0ETQU4VKB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/map-leaflet.js   (ca22a1cb)
+2019-01-23T22:46:23.3420786+07:00 0HLK0ETQU4VK9:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/bootstrap.min.js   (ca22a1cb)
+2019-01-23T22:46:23.3422739+07:00 0HLK0ETQU4VKB:00000001 [INF] The file "/admin-side/RealEstate/js/map-leaflet.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3422739+07:00 0HLK0ETQU4VKC:00000001 [INF] The file "/admin-side/RealEstate/js/custom.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3423505+07:00 0HLK0ETQU4VK8:00000008 [INF] The file "/admin-side/RealEstate/js/owl.carousel.min.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3423726+07:00 0HLK0ETQU4VKB:00000001 [INF] Request finished in 0.915ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3423809+07:00 0HLK0ETQU4VKC:00000001 [INF] Request finished in 1.2327ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3424580+07:00 0HLK0ETQU4VK8:00000008 [INF] Request finished in 4.025ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3428790+07:00 0HLK0ETQU4VK8:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/dragscroll.js   (ca22a1cb)
+2019-01-23T22:46:23.3430419+07:00 0HLK0ETQU4VK9:00000005 [INF] The file "/admin-side/RealEstate/js/bootstrap.min.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3431344+07:00 0HLK0ETQU4VK9:00000005 [INF] Request finished in 3.8569ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3437986+07:00 0HLK0ETQU4VK8:00000009 [INF] The file "/admin-side/RealEstate/js/dragscroll.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3439117+07:00 0HLK0ETQU4VK8:00000009 [INF] Request finished in 1.0548ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3491206+07:00 0HLK0ETQU4VKD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/sly.min.js   (ca22a1cb)
+2019-01-23T22:46:23.3498496+07:00 0HLK0ETQU4VKD:00000001 [INF] The file "/admin-side/RealEstate/js/sly.min.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3500531+07:00 0HLK0ETQU4VKD:00000001 [INF] Request finished in 0.9782ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3552251+07:00 0HLK0ETQU4VKC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/jquery.scrollbar.min.js   (ca22a1cb)
+2019-01-23T22:46:23.3560583+07:00 0HLK0ETQU4VKB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/js/leaflet.markercluster.js   (ca22a1cb)
+2019-01-23T22:46:23.3569101+07:00 0HLK0ETQU4VKB:00000002 [INF] The file "/admin-side/RealEstate/js/leaflet.markercluster.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3569101+07:00 0HLK0ETQU4VKC:00000002 [INF] The file "/admin-side/RealEstate/js/jquery.scrollbar.min.js" was not modified (f1f8d725)
+2019-01-23T22:46:23.3570366+07:00 0HLK0ETQU4VKB:00000002 [INF] Request finished in 1.0188ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.3570247+07:00 0HLK0ETQU4VKC:00000002 [INF] Request finished in 2.1245ms 304 application/javascript (791a596a)
+2019-01-23T22:46:23.4553662+07:00 0HLK0ETQU4VKA:00000002 [INF] Executed DbCommand ("47"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-01-23T22:46:23.4915012+07:00 0HLK0ETQU4VKA:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-01-23T22:46:23.5073558+07:00 0HLK0ETQU4VKA:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T22:46:23.5197934+07:00 0HLK0ETQU4VKA:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-01-23T22:46:23.5318619+07:00 0HLK0ETQU4VKA:00000002 [INF] Executed DbCommand ("9"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-01-23T22:46:23.5369407+07:00 0HLK0ETQU4VKA:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T22:46:23.5471900+07:00 0HLK0ETQU4VKA:00000002 [INF] Request finished in 380.1974ms 404  (791a596a)
+2019-01-23T22:46:23.9570911+07:00 0HLK0ETQU4VK9:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/marker-shadow.png   (ca22a1cb)
+2019-01-23T22:46:23.9595340+07:00 0HLK0ETQU4VK9:00000006 [INF] The file "/admin-side/RealEstate/image/marker-shadow.png" was not modified (f1f8d725)
+2019-01-23T22:46:23.9597098+07:00 0HLK0ETQU4VK9:00000006 [INF] Request finished in 2.6664ms 304 image/png (791a596a)
+2019-01-23T22:46:23.9625479+07:00 0HLK0ETQU4VK8:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-25.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9642124+07:00 0HLK0ETQU4VK8:0000000A [INF] Request finished in 1.7287ms 404  (791a596a)
+2019-01-23T22:46:23.9690723+07:00 0HLK0ETQU4VKB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-06.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9690723+07:00 0HLK0ETQU4VKD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-22.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9695457+07:00 0HLK0ETQU4VKC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-19.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9710267+07:00 0HLK0ETQU4VKD:00000002 [INF] Request finished in 2.0438ms 404  (791a596a)
+2019-01-23T22:46:23.9712216+07:00 0HLK0ETQU4VKA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-21.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9712673+07:00 0HLK0ETQU4VKB:00000003 [INF] Request finished in 2.2001ms 404  (791a596a)
+2019-01-23T22:46:23.9714061+07:00 0HLK0ETQU4VKC:00000003 [INF] Request finished in 1.8619ms 404  (791a596a)
+2019-01-23T22:46:23.9715788+07:00 0HLK0ETQU4VK9:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-09.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9734284+07:00 0HLK0ETQU4VK9:00000007 [INF] Request finished in 2.1986ms 404  (791a596a)
+2019-01-23T22:46:23.9734731+07:00 0HLK0ETQU4VKC:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-01.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9735523+07:00 0HLK0ETQU4VK8:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-03.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9737029+07:00 0HLK0ETQU4VKD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/assets/img/img-item-thumb-17.jpg   (ca22a1cb)
+2019-01-23T22:46:23.9738314+07:00 0HLK0ETQU4VKA:00000003 [INF] Request finished in 2.6273ms 404  (791a596a)
+2019-01-23T22:46:23.9747217+07:00 0HLK0ETQU4VKC:00000004 [INF] Request finished in 1.2568ms 404  (791a596a)
+2019-01-23T22:46:23.9747777+07:00 0HLK0ETQU4VKD:00000003 [INF] Request finished in 1.1016ms 404  (791a596a)
+2019-01-23T22:46:23.9751499+07:00 0HLK0ETQU4VK8:0000000B [INF] Request finished in 1.6341ms 404  (791a596a)
+2019-01-23T22:46:23.9867825+07:00 0HLK0ETQU4VKB:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/webfonts/fa-solid-900.woff2   (ca22a1cb)
+2019-01-23T22:46:23.9875984+07:00 0HLK0ETQU4VKB:00000004 [INF] The file "/admin-side/RealEstate/css/webfonts/fa-solid-900.woff2" was not modified (f1f8d725)
+2019-01-23T22:46:23.9877058+07:00 0HLK0ETQU4VKB:00000004 [INF] Request finished in 1.0255ms 304 font/woff2 (791a596a)
+2019-01-23T22:46:23.9962812+07:00 0HLK0ETQU4VKD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/webfonts/fa-regular-400.woff2   (ca22a1cb)
+2019-01-23T22:46:23.9974040+07:00 0HLK0ETQU4VKD:00000004 [INF] The file "/admin-side/RealEstate/css/webfonts/fa-regular-400.woff2" was not modified (f1f8d725)
+2019-01-23T22:46:23.9974579+07:00 0HLK0ETQU4VKC:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/css/webfonts/fa-brands-400.woff2   (ca22a1cb)
+2019-01-23T22:46:23.9975315+07:00 0HLK0ETQU4VKD:00000004 [INF] Request finished in 1.283ms 304 font/woff2 (791a596a)
+2019-01-23T22:46:23.9983313+07:00 0HLK0ETQU4VKC:00000005 [INF] The file "/admin-side/RealEstate/css/webfonts/fa-brands-400.woff2" was not modified (f1f8d725)
+2019-01-23T22:46:23.9984824+07:00 0HLK0ETQU4VKC:00000005 [INF] Request finished in 1.0024ms 304 font/woff2 (791a596a)
+2019-01-23T22:46:24.7703911+07:00 0HLK0ETQU4VKA:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-person-05.jpg   (ca22a1cb)
+2019-01-23T22:46:24.7715457+07:00 0HLK0ETQU4VK8:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-01.jpg   (ca22a1cb)
+2019-01-23T22:46:24.7731609+07:00 0HLK0ETQU4VKA:00000004 [INF] The file "/admin-side/RealEstate/image/img-person-05.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.7731609+07:00 0HLK0ETQU4VK8:0000000C [INF] The file "/admin-side/RealEstate/image/img-item-thumb-01.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.7732853+07:00 0HLK0ETQU4VKA:00000004 [INF] Request finished in 2.9506ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.7733542+07:00 0HLK0ETQU4VK8:0000000C [INF] Request finished in 1.795ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8601242+07:00 0HLK0ETQU4VK9:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-13.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8607781+07:00 0HLK0ETQU4VKB:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-20.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8607869+07:00 0HLK0ETQU4VKD:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/marker-default-img.png   (ca22a1cb)
+2019-01-23T22:46:24.8614320+07:00 0HLK0ETQU4VKD:00000005 [INF] The file "/admin-side/RealEstate/image/marker-default-img.png" was not modified (f1f8d725)
+2019-01-23T22:46:24.8615528+07:00 0HLK0ETQU4VKD:00000005 [INF] Request finished in 0.7751ms 304 image/png (791a596a)
+2019-01-23T22:46:24.8699967+07:00 0HLK0ETQU4VKC:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-10.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8708392+07:00 0HLK0ETQU4VKC:00000006 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-10.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8709636+07:00 0HLK0ETQU4VKC:00000006 [INF] Request finished in 1.5868ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8716473+07:00 0HLK0ETQU4VK8:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-07.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8723814+07:00 0HLK0ETQU4VK8:0000000D [INF] The file "/admin-side/RealEstate/image/img-item-thumb-07.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8732131+07:00 0HLK0ETQU4VK8:0000000D [INF] Request finished in 0.8975ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8733051+07:00 0HLK0ETQU4VKA:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-12.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8740012+07:00 0HLK0ETQU4VKD:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-24.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8743677+07:00 0HLK0ETQU4VKA:00000005 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-12.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8744587+07:00 0HLK0ETQU4VKA:00000005 [INF] Request finished in 1.3062ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8751778+07:00 0HLK0ETQU4VK8:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-25.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8755484+07:00 0HLK0ETQU4VK9:00000008 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-13.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-13.jpg"' (27b0a520)
+2019-01-23T22:46:24.8755551+07:00 0HLK0ETQU4VKB:00000005 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-20.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-20.jpg"' (27b0a520)
+2019-01-23T22:46:24.8756528+07:00 0HLK0ETQU4VK9:00000008 [INF] Request finished in 15.5985ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.8757124+07:00 0HLK0ETQU4VKB:00000005 [INF] Request finished in 14.9564ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.8777831+07:00 0HLK0ETQU4VKE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-05.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8784992+07:00 0HLK0ETQU4VKC:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-02.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8787993+07:00 0HLK0ETQU4VKE:00000001 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-05.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8791175+07:00 0HLK0ETQU4VKC:00000007 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-02.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8792404+07:00 0HLK0ETQU4VKC:00000007 [INF] Request finished in 0.753ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8802757+07:00 0HLK0ETQU4VKE:00000001 [INF] Request finished in 1.9811ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8817850+07:00 0HLK0ETQU4VKA:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-04.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8827478+07:00 0HLK0ETQU4VKA:00000006 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-04.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8829010+07:00 0HLK0ETQU4VKA:00000006 [INF] Request finished in 1.1797ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8840366+07:00 0HLK0ETQU4VKC:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-19.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8859057+07:00 0HLK0ETQU4VKA:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-23.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8877023+07:00 0HLK0ETQU4VKD:00000006 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-24.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-24.jpg"' (27b0a520)
+2019-01-23T22:46:24.8878057+07:00 0HLK0ETQU4VKD:00000006 [INF] Request finished in 13.8193ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.8891936+07:00 0HLK0ETQU4VKF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-06.jpg   (ca22a1cb)
+2019-01-23T22:46:24.8898845+07:00 0HLK0ETQU4VKF:00000001 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-06.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.8900094+07:00 0HLK0ETQU4VKF:00000001 [INF] Request finished in 0.8836ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.8983690+07:00 0HLK0ETQU4VK8:0000000E [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-25.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-25.jpg"' (27b0a520)
+2019-01-23T22:46:24.8987730+07:00 0HLK0ETQU4VK8:0000000E [INF] Request finished in 23.6445ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9005686+07:00 0HLK0ETQU4VKC:00000008 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-19.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-19.jpg"' (27b0a520)
+2019-01-23T22:46:24.9006715+07:00 0HLK0ETQU4VKC:00000008 [INF] Request finished in 17.5118ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9043489+07:00 0HLK0ETQU4VKA:00000007 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-23.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-23.jpg"' (27b0a520)
+2019-01-23T22:46:24.9046467+07:00 0HLK0ETQU4VKA:00000007 [INF] Request finished in 19.8626ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9077978+07:00 0HLK0ETQU4VKE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-11.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9087308+07:00 0HLK0ETQU4VKE:00000002 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-11.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.9088588+07:00 0HLK0ETQU4VKE:00000002 [INF] Request finished in 1.3242ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.9104837+07:00 0HLK0ETQU4VKD:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-08.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9111967+07:00 0HLK0ETQU4VK9:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-22.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9114142+07:00 0HLK0ETQU4VKD:00000007 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-08.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.9115525+07:00 0HLK0ETQU4VKD:00000007 [INF] Request finished in 1.2584ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.9173999+07:00 0HLK0ETQU4VKF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-21.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9186767+07:00 0HLK0ETQU4VKB:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-09.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9199984+07:00 0HLK0ETQU4VKB:00000006 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-09.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.9201464+07:00 0HLK0ETQU4VKB:00000006 [INF] Request finished in 1.4768ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.9243535+07:00 0HLK0ETQU4VK9:00000009 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-22.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-22.jpg"' (27b0a520)
+2019-01-23T22:46:24.9244764+07:00 0HLK0ETQU4VK9:00000009 [INF] Request finished in 13.4698ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9247113+07:00 0HLK0ETQU4VKC:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-03.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9254325+07:00 0HLK0ETQU4VKC:00000009 [INF] The file "/admin-side/RealEstate/image/img-item-thumb-03.jpg" was not modified (f1f8d725)
+2019-01-23T22:46:24.9255914+07:00 0HLK0ETQU4VKC:00000009 [INF] Request finished in 0.8857ms 304 image/jpeg (791a596a)
+2019-01-23T22:46:24.9287179+07:00 0HLK0ETQU4VKA:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-16.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9288577+07:00 0HLK0ETQU4VKE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-17.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9292710+07:00 0HLK0ETQU4VK8:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-18.jpg   (ca22a1cb)
+2019-01-23T22:46:24.9329058+07:00 0HLK0ETQU4VKF:00000002 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-21.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-21.jpg"' (27b0a520)
+2019-01-23T22:46:24.9330199+07:00 0HLK0ETQU4VKF:00000002 [INF] Request finished in 15.6756ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9422211+07:00 0HLK0ETQU4VK8:0000000F [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-18.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-18.jpg"' (27b0a520)
+2019-01-23T22:46:24.9423177+07:00 0HLK0ETQU4VK8:0000000F [INF] Request finished in 13.0606ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9437755+07:00 0HLK0ETQU4VKA:00000008 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-16.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-16.jpg"' (27b0a520)
+2019-01-23T22:46:24.9438999+07:00 0HLK0ETQU4VKA:00000008 [INF] Request finished in 15.2633ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9609018+07:00 0HLK0ETQU4VKE:00000003 [INF] Sending file. Request path: '"/admin-side/RealEstate/image/img-item-thumb-17.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\RealEstate\image\img-item-thumb-17.jpg"' (27b0a520)
+2019-01-23T22:46:24.9610463+07:00 0HLK0ETQU4VKE:00000003 [INF] Request finished in 32.2858ms 200 image/jpeg (791a596a)
+2019-01-23T22:46:24.9647311+07:00 0HLK0ETQU4VKD:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T22:46:24.9668772+07:00 0HLK0ETQU4VKD:00000008 [INF] Request finished in 2.1914ms 404  (791a596a)
+2019-01-23T22:46:25.8995451+07:00 0HLK0ETQU4VKB:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/favicon.ico   (ca22a1cb)
+2019-01-23T22:46:25.9136426+07:00 0HLK0ETQU4VKB:00000007 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\favicon.ico"' (27b0a520)
+2019-01-23T22:46:25.9139818+07:00 0HLK0ETQU4VKB:00000007 [INF] Request finished in 14.4645ms 200 image/x-icon (791a596a)
+2019-01-23T22:46:35.4378354+07:00 0HLK0ETQU4VKC:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T22:46:35.4426819+07:00 0HLK0ETQU4VKC:0000000A [INF] Request finished in 4.5612ms 404  (791a596a)
+2019-01-23T22:46:36.6095815+07:00 0HLK0ETQU4VK9:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T22:46:36.6111247+07:00 0HLK0ETQU4VK9:0000000A [INF] Request finished in 1.5344ms 404  (791a596a)
+2019-01-23T22:46:37.3806009+07:00 0HLK0ETQU4VKF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T22:46:37.3863496+07:00 0HLK0ETQU4VKF:00000003 [INF] Request finished in 5.9995ms 404  (791a596a)
+2019-01-23T22:46:37.3869120+07:00 0HLK0ETQU4VK8:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T22:46:37.3932678+07:00 0HLK0ETQU4VK8:00000010 [INF] Request finished in 6.3249ms 404  (791a596a)
+2019-01-23T22:46:37.4162779+07:00 0HLK0ETQU4VKE:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T22:46:37.4179660+07:00 0HLK0ETQU4VKE:00000004 [INF] Request finished in 1.7503ms 404  (791a596a)
+2019-01-23T22:46:42.2349575+07:00 0HLK0ETQU4VKA:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T22:46:42.2354499+07:00 0HLK0ETQU4VKD:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T22:46:42.2362498+07:00 0HLK0ETQU4VKA:00000009 [INF] Request finished in 1.3401ms 404  (791a596a)
+2019-01-23T22:46:42.2372666+07:00 0HLK0ETQU4VKD:00000009 [INF] Request finished in 1.8223ms 404  (791a596a)
+2019-01-23T22:46:42.2548931+07:00 0HLK0ETQU4VKB:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T22:46:42.2569374+07:00 0HLK0ETQU4VKB:00000008 [INF] Request finished in 2.1626ms 404  (791a596a)
+2019-01-23T22:46:48.0007802+07:00 0HLK0ETQU4VKC:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T22:46:48.0007802+07:00 0HLK0ETQU4VK9:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T22:46:48.0022911+07:00 0HLK0ETQU4VK9:0000000B [INF] Request finished in 1.5092ms 404  (791a596a)
+2019-01-23T22:46:48.0023184+07:00 0HLK0ETQU4VKC:0000000B [INF] Request finished in 2.2633ms 404  (791a596a)
+2019-01-23T22:46:48.0270819+07:00 0HLK0ETQU4VKF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T22:46:48.0293777+07:00 0HLK0ETQU4VKF:00000004 [INF] Request finished in 2.341ms 404  (791a596a)
+2019-01-23T23:45:59.7175549+07:00 0HLK0ETQU4VKH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T23:45:59.7175616+07:00 0HLK0ETQU4VKI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T23:45:59.7175616+07:00 0HLK0ETQU4VKG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T23:45:59.7618552+07:00 0HLK0ETQU4VKH:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-01-23T23:45:59.7624859+07:00 0HLK0ETQU4VKG:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-01-23T23:45:59.7633614+07:00 0HLK0ETQU4VKI:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-01-23T23:45:59.8661911+07:00 0HLK0ETQU4VKI:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-01-23T23:45:59.8663109+07:00 0HLK0ETQU4VKH:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-01-23T23:45:59.8812694+07:00 0HLK0ETQU4VKG:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-01-23T23:45:59.8976801+07:00 0HLK0ETQU4VKI:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-01-23T23:45:59.8985001+07:00 0HLK0ETQU4VKG:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-01-23T23:45:59.9022090+07:00 0HLK0ETQU4VKH:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-01-23T23:45:59.9230853+07:00 0HLK0ETQU4VKH:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T23:45:59.9234487+07:00 0HLK0ETQU4VKG:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T23:45:59.9242224+07:00 0HLK0ETQU4VKI:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T23:45:59.9284377+07:00 0HLK0ETQU4VKG:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-01-23T23:45:59.9285055+07:00 0HLK0ETQU4VKH:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-01-23T23:45:59.9285220+07:00 0HLK0ETQU4VKI:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-01-23T23:45:59.9340666+07:00 0HLK0ETQU4VKI:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-01-23T23:45:59.9342917+07:00 0HLK0ETQU4VKG:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-01-23T23:45:59.9350474+07:00 0HLK0ETQU4VKH:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-01-23T23:45:59.9362226+07:00 0HLK0ETQU4VKI:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T23:45:59.9363547+07:00 0HLK0ETQU4VKG:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T23:45:59.9401715+07:00 0HLK0ETQU4VKH:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-01-23T23:45:59.9428019+07:00 0HLK0ETQU4VKI:00000001 [INF] Request finished in 232.1832ms 404  (791a596a)
+2019-01-23T23:45:59.9429130+07:00 0HLK0ETQU4VKH:00000001 [INF] Request finished in 232.9208ms 404  (791a596a)
+2019-01-23T23:45:59.9431109+07:00 0HLK0ETQU4VKG:00000001 [INF] Request finished in 233.3038ms 404  (791a596a)
+2019-01-23T23:48:11.7089656+07:00 0HLK0ETQU4VKJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T23:48:11.7099669+07:00 0HLK0ETQU4VKK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T23:48:11.7152740+07:00 0HLK0ETQU4VKJ:00000001 [INF] Request finished in 6.4791ms 404  (791a596a)
+2019-01-23T23:48:11.7165088+07:00 0HLK0ETQU4VKK:00000001 [INF] Request finished in 6.6852ms 404  (791a596a)
+2019-01-23T23:48:11.7751236+07:00 0HLK0ETQU4VKJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T23:48:11.7780233+07:00 0HLK0ETQU4VKJ:00000002 [INF] Request finished in 3.1706ms 404  (791a596a)
+2019-01-23T23:48:12.2485517+07:00 0HLK0ETQU4VKK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T23:48:12.2518432+07:00 0HLK0ETQU4VKK:00000002 [INF] Request finished in 2.8555ms 404  (791a596a)
+2019-01-23T23:48:12.2591721+07:00 0HLK0ETQU4VKJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T23:48:12.2621788+07:00 0HLK0ETQU4VKJ:00000003 [INF] Request finished in 3.7803ms 404  (791a596a)
+2019-01-23T23:48:12.2776977+07:00 0HLK0ETQU4VKK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/undefined   (ca22a1cb)
+2019-01-23T23:48:12.2842503+07:00 0HLK0ETQU4VKK:00000003 [INF] Request finished in 6.603ms 404  (791a596a)
+2019-01-23T23:48:12.3217070+07:00 0HLK0ETQU4VKJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T23:48:12.3245004+07:00 0HLK0ETQU4VKJ:00000004 [INF] Request finished in 3.3824ms 404  (791a596a)
+2019-01-23T23:59:57.0640652+07:00 0HLK0ETQU4VKL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-15.jpg   (ca22a1cb)
+2019-01-23T23:59:57.0669028+07:00 0HLK0ETQU4VKM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/img-item-thumb-14.jpg   (ca22a1cb)
+2019-01-23T23:59:57.0749231+07:00 0HLK0ETQU4VKL:00000001 [INF] Request finished in 11.4608ms 404  (791a596a)
+2019-01-23T23:59:57.0777822+07:00 0HLK0ETQU4VKM:00000001 [INF] Request finished in 11.6952ms 404  (791a596a)
+2019-01-23T23:59:57.1175861+07:00 0HLK0ETQU4VKL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/undefined   (ca22a1cb)
+2019-01-23T23:59:57.1226562+07:00 0HLK0ETQU4VKL:00000002 [INF] Request finished in 5.1549ms 404  (791a596a)
+2019-01-23T23:59:57.2217391+07:00 0HLK0ETQU4VKM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/RealEstate/image/result-center.svg   (ca22a1cb)
+2019-01-23T23:59:57.2283991+07:00 0HLK0ETQU4VKM:00000002 [INF] Request finished in 6.987ms 404  (791a596a)

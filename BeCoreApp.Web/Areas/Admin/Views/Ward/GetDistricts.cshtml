@@ -1,0 +1,32 @@
+﻿@model Boolean
+@if (Model)
+{
+    @Html.DropDownList("DistrictId", (SelectList)ViewBag.DistrictId, "", new { @class = "form-control m-select2" })
+    <script>
+        $(function () {
+            $('#DistrictId').select2({
+                placeholder: "Chọn quận/huyện",
+                allowClear: true,
+            });
+        })
+    </script>
+}
+else
+{
+    @Html.DropDownList("DistrictSearch", (SelectList)ViewBag.DistrictId, "", new { @class = "form-control m-select2" })
+    <script>
+        $(function () {
+            $('#DistrictSearch').select2({
+                placeholder: "Chọn quận/huyện",
+                allowClear: true,
+            });
+
+            //$("#DistrictSearch").on('change', function (e) {
+            //    debugger;
+            //    e.preventDefault();
+            //    loadData(true);
+            //});
+        })
+    </script>
+}
+

@@ -6,9 +6,201 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="wwwroot\admin-side\Mall\adaptive.css" />
+    <None Remove="wwwroot\admin-side\Mall\add-to-cart.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\animate.css" />
+    <None Remove="wwwroot\admin-side\Mall\bootstrap-datepicker.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\bootstrap-datepicker.standalone.min.css" />
+    <None Remove="wwwroot\admin-side\Mall\cart-fragments.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\Chocolate.png" />
+    <None Remove="wwwroot\admin-side\Mall\cmsmasters-events-adaptive.css" />
+    <None Remove="wwwroot\admin-side\Mall\cmsmasters-events-style.css" />
+    <None Remove="wwwroot\admin-side\Mall\cmsmasters-woo-adaptive.css" />
+    <None Remove="wwwroot\admin-side\Mall\cmsmasters-woo-style.css" />
+    <None Remove="wwwroot\admin-side\Mall\comment-reply.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\common.js" />
+    <None Remove="wwwroot\admin-side\Mall\dark-skin.css" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_11582850_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_1182391_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_14904345_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_2036322_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_21714889_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_23753813_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_25415543_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_3885449_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_45052489_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_57975871_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_57975933_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_67409761_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_68172657_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_68172711_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_83212300_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Depositphotos_9244974_original-580x390.jpg" />
+    <None Remove="wwwroot\admin-side\Mall\Explore.png" />
+    <None Remove="wwwroot\admin-side\Mall\fontello-custom.css" />
+    <None Remove="wwwroot\admin-side\Mall\fontello.css" />
+    <None Remove="wwwroot\admin-side\Mall\geocoder.js" />
+    <None Remove="wwwroot\admin-side\Mall\greensock.js" />
+    <None Remove="wwwroot\admin-side\Mall\ilightbox.css" />
+    <None Remove="wwwroot\admin-side\Mall\jquery-migrate.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery-ui-1.8.23.custom.css" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.ba-resize.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.blockUI.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.cmsmasters-woo-script.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.iLightBox.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.isotope.css" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.isotope.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.isotope.mode.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.megaMenu.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.placeholder.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.script.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.themepunch.revolution.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.themepunch.tools.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jquery.tweet.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jqueryLibraries.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\js.cookie.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\jsLibraries.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\layerslider.css" />
+    <None Remove="wwwroot\admin-side\Mall\layerslider.kreaturamedia.jquery.js" />
+    <None Remove="wwwroot\admin-side\Mall\layerslider.transitions.js" />
+    <None Remove="wwwroot\admin-side\Mall\logo-retina.png" />
+    <None Remove="wwwroot\admin-side\Mall\logo2.png" />
+    <None Remove="wwwroot\admin-side\Mall\logo3.png" />
+    <None Remove="wwwroot\admin-side\Mall\Lumber-Jacket.png" />
+    <None Remove="wwwroot\admin-side\Mall\mall.css" />
+    <None Remove="wwwroot\admin-side\Mall\Mall.html" />
+    <None Remove="wwwroot\admin-side\Mall\Market.png" />
+    <None Remove="wwwroot\admin-side\Mall\Mountain.png" />
+    <None Remove="wwwroot\admin-side\Mall\Mountainware.png" />
+    <None Remove="wwwroot\admin-side\Mall\party.png" />
+    <None Remove="wwwroot\admin-side\Mall\Pastries.png" />
+    <None Remove="wwwroot\admin-side\Mall\public.0ac1326d.js" />
+    <None Remove="wwwroot\admin-side\Mall\public.cae357df.css" />
+    <None Remove="wwwroot\admin-side\Mall\retina.css" />
+    <None Remove="wwwroot\admin-side\Mall\scripts.js" />
+    <None Remove="wwwroot\admin-side\Mall\scrollspy.js" />
+    <None Remove="wwwroot\admin-side\Mall\settings.css" />
+    <None Remove="wwwroot\admin-side\Mall\Shabby-Chic.png" />
+    <None Remove="wwwroot\admin-side\Mall\skin.css" />
+    <None Remove="wwwroot\admin-side\Mall\slider.png" />
+    <None Remove="wwwroot\admin-side\Mall\slider2.png" />
+    <None Remove="wwwroot\admin-side\Mall\style.css" />
+    <None Remove="wwwroot\admin-side\Mall\styles.css" />
+    <None Remove="wwwroot\admin-side\Mall\tribe-events-ajax-maps.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\tribe-events-pro.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\tribe-events.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-11.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-2.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-21.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-3.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-31.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-4.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-41.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-5.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-51.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-6.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-7.png" />
+    <None Remove="wwwroot\admin-side\Mall\Untitled-8.png" />
+    <None Remove="wwwroot\admin-side\Mall\util.js" />
+    <None Remove="wwwroot\admin-side\Mall\validationEngine.jquery.css" />
+    <None Remove="wwwroot\admin-side\Mall\vendor.0bbb6b88.js" />
+    <None Remove="wwwroot\admin-side\Mall\widget-countdown.js" />
+    <None Remove="wwwroot\admin-side\Mall\woocommerce.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\wp-embed.min.js" />
+    <None Remove="wwwroot\admin-side\Mall\wp-emoji-release.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.1.0" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.6" PrivateAssets="All" />
+    <PackageReference Include="PaulMiami.AspNetCore.Mvc.Recaptcha" Version="1.2.1" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="WebMarkupMin.AspNetCore2" Version="2.5.0" />
+    <PackageReference Include="WebMarkupMin.NUglify" Version="2.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeCoreApp.Application\BeCoreApp.Application.csproj" />
+    <ProjectReference Include="..\BeCoreApp.Data.EF\BeCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\BeCoreApp.Data\BeCoreApp.Data.csproj" />
+    <ProjectReference Include="..\BeCoreApp.Infrastructure\BeCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\BeCoreApp.Utilities\BeCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploaded\images\20181126\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Areas\Admin\Views\ClassifiedCategory\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\ClassifiedCategory\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Direction\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Direction\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\ProjectCategory\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\ProjectCategory\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Unit\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Unit\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Type\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Type\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Street\GetWards.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Street\GetDistricts.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Street\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Street\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Ward\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Ward\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\District\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\District\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Province\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Province\_AddEditModal.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Admin\Views\Shared\Components\Paging\Default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>

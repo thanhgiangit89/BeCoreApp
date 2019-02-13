@@ -1,0 +1,34 @@
+﻿<div id="modal-import-excel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Nhập sản phẩm trong file excel
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="frmMaintainance">
+                    <div class="form-group">
+                        <label for="txtName" class="form-control-label">Chọn file sản phẩm</label>
+                        <div class="input-group">
+                            <input type="file" id="fileInputExcel" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Loại sản phẩm</label>
+                        <input id="ddlCategoryIdImportExcel" class="form-control" name="ddlCategoryIdM" value="">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancel" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" id="btnImportExcel" class="btn btn-success">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>

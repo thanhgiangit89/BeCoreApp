@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Role list";
+}
+@section Styles{
+    <link href="~/lib/jquery-treegrid/css/jquery.treegrid.css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/lib/jquery-treegrid/js/jquery.treegrid.js"></script>
+    <script src="~/app/controllers/role/index.js" asp-append-version="true"></script>
+    <script>
+        var roleObj = new RoleController();
+        roleObj.initialize();
+    </script>
+}
+<!-- BEGIN: Subheader -->
+@await Component.InvokeAsync("SubHeader")
+<!-- END: Subheader -->
+<div class="m-content">
+    <div class="m-portlet m-portlet--mobile">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <h3 class="m-portlet__head-text">
+                        Roles
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="m-portlet__body">
+            <!--begin: Search Form -->
+            <div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 order-2 order-xl-1">
+                        <div class="form-group m-form__group row align-items-center">
+                            <div class="col-md-6">
+                                <div class="m-input-icon m-input-icon--left">
+                                    <input type="text" id="txt-search-keyword" class="form-control m-input" placeholder="Search...">
+                                    <span class="m-input-icon__icon m-input-icon__icon--left">
+                                        <span><i class="la la-search"></i></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 order-1 order-xl-2 m--align-right">
+                        <a href="#" id="btn-create" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+                            <span><i class="flaticon-plus"></i><span>Create</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--end: Search Form -->
+            <!--begin::Section-->
+            <div class="m-section">
+                <div class="m-section__content">
+                    <div class="table-responsive">
+                        <table class="table m-table m-table--head-separator-primary">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th width="15%"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbl-content"></tbody>
+                        </table>
+                    </div>
+                    @await Component.InvokeAsync("Paging")
+                </div>
+            </div>
+            <!--end::Section-->
+        </div>
+    </div>
+</div>
+
+<script id="table-template" type="x-tmpl-mustache">
+    <tr>
+        <td>{{Name}}</td>
+        <td>{{Description}}</td>
+        <td width="300">
+            <a href="#" class="btn m-btn m-btn--hover-warning m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown" aria-expanded="false"><i class="la la-ellipsis-h"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
+                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
+                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
+            </div>
+            <a href="#" data-id="{{Id}}" class="btn-grant m-portlet__nav-link btn m-btn m-btn--hover-info m-btn--icon m-btn--icon-only m-btn--pill"><i class="la la-eye"></i></a>
+            <a href="#" data-id="{{Id}}" class="btn-edit m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill"><i class="la la-edit"></i></a>
+            <a href="#" data-id="{{Id}}" class="btn-delete m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill"><i class="la la-trash"></i></a>
+        </td>
+    </tr>
+</script>
+@Html.Partial("_AddEditModal.cshtml")
+@Html.Partial("_AssignPermission.cshtml")

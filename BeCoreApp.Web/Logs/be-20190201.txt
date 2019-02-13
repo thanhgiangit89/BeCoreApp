@@ -1,0 +1,1117 @@
+2019-02-01T00:05:06.3653978+07:00 0HLK7J7LV8F6O:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:05:06.3690050+07:00 0HLK7J7LV8F6O:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:05:06.3801883+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-02-01T00:05:06.3861601+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-01T00:05:06.3915566+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-01T00:05:06.3950306+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-01T00:05:06.3983181+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-01T00:05:06.3997666+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-01T00:05:06.4021637+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-01T00:05:06.4039043+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-01T00:05:06.4056027+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-01T00:05:06.4067321+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-01T00:05:06.4073248+07:00 0HLK7J7LV8F6O:00000001 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:05:06.4074379+07:00 0HLK7J7LV8F6O:00000001 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:05:06.4078980+07:00 0HLK7J7LV8F6O:00000001 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:05:06.4079664+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0082ms. (50a9e262)
+2019-02-01T00:05:06.4080620+07:00 0HLK7J7LV8F6O:00000001 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:05:06.4091476+07:00 0HLK7J7LV8F6O:00000001 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 1.739ms (afa2e885)
+2019-02-01T00:05:06.4094041+07:00 0HLK7J7LV8F6O:00000001 [INF] Request finished in 44.3908ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:05:54.0915955+07:00 0HLK7J7LV8F6O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:05:54.0928308+07:00 0HLK7J7LV8F6O:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:05:54.0929541+07:00 0HLK7J7LV8F6O:00000002 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:05:54.0930590+07:00 0HLK7J7LV8F6O:00000002 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:05:54.0931346+07:00 0HLK7J7LV8F6O:00000002 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0102ms. (50a9e262)
+2019-02-01T00:05:54.0932698+07:00 0HLK7J7LV8F6O:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:05:54.0946772+07:00 0HLK7J7LV8F6O:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:05:54.0996158+07:00 0HLK7J7LV8F6O:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:05:54.1024138+07:00 0HLK7J7LV8F6O:00000002 [INF] Executed ViewResult - view "Index" executed in 9.201ms. (f66409e9)
+2019-02-01T00:05:54.1025017+07:00 0HLK7J7LV8F6O:00000002 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 9.5994ms (afa2e885)
+2019-02-01T00:05:54.1338535+07:00 0HLK7J7LV8F6O:00000002 [INF] Request finished in 42.4569ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:05:54.1806064+07:00 0HLK7J7LV8F6O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-02-01T00:05:54.1824684+07:00 0HLK7J7LV8F6P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-01T00:05:54.1826179+07:00 0HLK7J7LV8F6R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css   (ca22a1cb)
+2019-02-01T00:05:54.1827218+07:00 0HLK7J7LV8F6O:00000003 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2019-02-01T00:05:54.1827937+07:00 0HLK7J7LV8F6O:00000003 [INF] Request finished in 2.2551ms 200 text/css (791a596a)
+2019-02-01T00:05:54.1827752+07:00 0HLK7J7LV8F6Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.css   (ca22a1cb)
+2019-02-01T00:05:54.1830564+07:00 0HLK7J7LV8F6R:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css"' (27b0a520)
+2019-02-01T00:05:54.1830693+07:00 0HLK7J7LV8F6P:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2019-02-01T00:05:54.1831027+07:00 0HLK7J7LV8F6P:00000001 [INF] Request finished in 0.7582ms 200 text/css (791a596a)
+2019-02-01T00:05:54.1830965+07:00 0HLK7J7LV8F6R:00000001 [INF] Request finished in 0.4991ms 200 text/css (791a596a)
+2019-02-01T00:05:54.1834209+07:00 0HLK7J7LV8F6S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/style.bundle.css   (ca22a1cb)
+2019-02-01T00:05:54.1834800+07:00 0HLK7J7LV8F6T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/logo.png   (ca22a1cb)
+2019-02-01T00:05:54.1838285+07:00 0HLK7J7LV8F6T:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/logo.png"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\logo.png"' (27b0a520)
+2019-02-01T00:05:54.1838660+07:00 0HLK7J7LV8F6T:00000001 [INF] Request finished in 0.4086ms 200 image/png (791a596a)
+2019-02-01T00:05:54.1843395+07:00 0HLK7J7LV8F6P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user4.jpg   (ca22a1cb)
+2019-02-01T00:05:54.1882715+07:00 0HLK7J7LV8F6P:00000002 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user4.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user4.jpg"' (27b0a520)
+2019-02-01T00:05:54.1883564+07:00 0HLK7J7LV8F6P:00000002 [INF] Request finished in 4.0939ms 200 image/jpeg (791a596a)
+2019-02-01T00:05:54.1922956+07:00 0HLK7J7LV8F6Q:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.css"' (27b0a520)
+2019-02-01T00:05:54.1923768+07:00 0HLK7J7LV8F6Q:00000001 [INF] Request finished in 9.6097ms 200 text/css (791a596a)
+2019-02-01T00:05:54.1995822+07:00 0HLK7J7LV8F6S:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/style.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\style.bundle.css"' (27b0a520)
+2019-02-01T00:05:54.1997544+07:00 0HLK7J7LV8F6S:00000001 [INF] Request finished in 16.3284ms 200 text/css (791a596a)
+2019-02-01T00:05:54.4605903+07:00 0HLK7J7LV8F6R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-01T00:05:54.4605903+07:00 0HLK7J7LV8F6T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-01T00:05:54.4619706+07:00 0HLK7J7LV8F6T:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-01T00:05:54.4620667+07:00 0HLK7J7LV8F6T:00000002 [INF] Request finished in 1.4995ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.4629703+07:00 0HLK7J7LV8F6R:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-01T00:05:54.4630660+07:00 0HLK7J7LV8F6R:00000002 [INF] Request finished in 2.4911ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.4782379+07:00 0HLK7J7LV8F6O:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/mustache/mustache.js   (ca22a1cb)
+2019-02-01T00:05:54.4788054+07:00 0HLK7J7LV8F6O:00000004 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-02-01T00:05:54.4800354+07:00 0HLK7J7LV8F6O:00000004 [INF] Request finished in 1.8187ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.4847879+07:00 0HLK7J7LV8F6P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-01T00:05:54.4891801+07:00 0HLK7J7LV8F6P:00000003 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-01T00:05:54.4892567+07:00 0HLK7J7LV8F6P:00000003 [INF] Request finished in 4.5375ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.4960982+07:00 0HLK7J7LV8F6Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-01T00:05:54.4973653+07:00 0HLK7J7LV8F6Q:00000002 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-01T00:05:54.4974933+07:00 0HLK7J7LV8F6Q:00000002 [INF] Request finished in 1.4522ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5066476+07:00 0HLK7J7LV8F6S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-01T00:05:54.5073843+07:00 0HLK7J7LV8F6S:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-02-01T00:05:54.5073185+07:00 0HLK7J7LV8F6T:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-01T00:05:54.5077647+07:00 0HLK7J7LV8F6S:00000002 [INF] Request finished in 0.9057ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5088530+07:00 0HLK7J7LV8F6T:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-02-01T00:05:54.5089620+07:00 0HLK7J7LV8F6T:00000003 [INF] Request finished in 1.8094ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5184237+07:00 0HLK7J7LV8F6R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-02-01T00:05:54.5195412+07:00 0HLK7J7LV8F6O:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-01T00:05:54.5200147+07:00 0HLK7J7LV8F6O:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-02-01T00:05:54.5200964+07:00 0HLK7J7LV8F6O:00000005 [INF] Request finished in 0.6029ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5297777+07:00 0HLK7J7LV8F6P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/moment/moment.js   (ca22a1cb)
+2019-02-01T00:05:54.5302711+07:00 0HLK7J7LV8F6R:00000003 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-02-01T00:05:54.5303575+07:00 0HLK7J7LV8F6R:00000003 [INF] Request finished in 12.1296ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5314498+07:00 0HLK7J7LV8F6P:00000004 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-01T00:05:54.5315131+07:00 0HLK7J7LV8F6P:00000004 [INF] Request finished in 1.9816ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5408037+07:00 0HLK7J7LV8F6Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-01T00:05:54.5427560+07:00 0HLK7J7LV8F6Q:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-01T00:05:54.5428347+07:00 0HLK7J7LV8F6Q:00000003 [INF] Request finished in 2.0721ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.5438397+07:00 0HLK7J7LV8F6S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.js?v=gq1Lj7PHUNjW436RsYipn4esfDlfCTwXeToHSdniBLI   (ca22a1cb)
+2019-02-01T00:05:54.5533189+07:00 0HLK7J7LV8F6T:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/scripts.bundle.js?v=4eWUzQd3jwH7kuvJC1Ob80BkG4HgXyaAOF2jJy-M7SU   (ca22a1cb)
+2019-02-01T00:05:54.5559343+07:00 0HLK7J7LV8F6T:00000004 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/scripts.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\scripts.bundle.js"' (27b0a520)
+2019-02-01T00:05:54.5560181+07:00 0HLK7J7LV8F6T:00000004 [INF] Request finished in 2.7291ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.6426053+07:00 0HLK7J7LV8F6S:00000003 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.js"' (27b0a520)
+2019-02-01T00:05:54.6427246+07:00 0HLK7J7LV8F6S:00000003 [INF] Request finished in 98.9219ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.6528252+07:00 0HLK7J7LV8F6Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-02-01T00:05:54.6528252+07:00 0HLK7J7LV8F6O:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=j5b5CprG9YRjedUx5lIsyHLxo7hv324n5mYRME0aej0   (ca22a1cb)
+2019-02-01T00:05:54.6528252+07:00 0HLK7J7LV8F6P:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-02-01T00:05:54.6528252+07:00 0HLK7J7LV8F6R:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=eAUPhdbcNsjeUDeZ6kixlSPt_wvD_XdhtsIBWtON7MU   (ca22a1cb)
+2019-02-01T00:05:54.6533290+07:00 0HLK7J7LV8F6O:00000006 [INF] Sending file. Request path: '"/admin-app/shared/be.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\shared\be.js"' (27b0a520)
+2019-02-01T00:05:54.6533301+07:00 0HLK7J7LV8F6P:00000005 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-02-01T00:05:54.6533774+07:00 0HLK7J7LV8F6O:00000006 [INF] Request finished in 0.5952ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.6533789+07:00 0HLK7J7LV8F6P:00000005 [INF] Request finished in 0.5999ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.6534612+07:00 0HLK7J7LV8F6Q:00000004 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user3.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user3.jpg"' (27b0a520)
+2019-02-01T00:05:54.6534946+07:00 0HLK7J7LV8F6Q:00000004 [INF] Request finished in 0.7207ms 200 image/jpeg (791a596a)
+2019-02-01T00:05:54.6536565+07:00 0HLK7J7LV8F6R:00000004 [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:05:54.6537752+07:00 0HLK7J7LV8F6R:00000004 [INF] Request finished in 0.9936ms 200 application/javascript (791a596a)
+2019-02-01T00:05:54.6997756+07:00 0HLK7J7LV8F6T:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff   (ca22a1cb)
+2019-02-01T00:05:54.6997756+07:00 0HLK7J7LV8F6R:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2?v=1.1.   (ca22a1cb)
+2019-02-01T00:05:54.7002824+07:00 0HLK7J7LV8F6R:00000005 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\line-awesome\line-awesome.woff2"' (27b0a520)
+2019-02-01T00:05:54.7002809+07:00 0HLK7J7LV8F6T:00000005 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\flaticon\Flaticon.woff"' (27b0a520)
+2019-02-01T00:05:54.7003411+07:00 0HLK7J7LV8F6T:00000005 [INF] Request finished in 0.623ms 200 application/font-woff (791a596a)
+2019-02-01T00:05:54.7003421+07:00 0HLK7J7LV8F6R:00000005 [INF] Request finished in 0.6076ms 200 font/woff2 (791a596a)
+2019-02-01T00:05:55.3630090+07:00 0HLK7J7LV8F6Q:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:05:55.3638752+07:00 0HLK7J7LV8F6Q:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:05:55.3639728+07:00 0HLK7J7LV8F6Q:00000005 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:05:55.3641970+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:05:55.3645543+07:00 0HLK7J7LV8F6Q:00000005 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:05:55.3658029+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:05:55.3676360+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:05:55.3712160+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:05:55.3714997+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.2461ms. (50a9e262)
+2019-02-01T00:05:55.3716004+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:05:55.3719104+07:00 0HLK7J7LV8F6Q:00000005 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 7.9781ms (afa2e885)
+2019-02-01T00:05:55.3721443+07:00 0HLK7J7LV8F6Q:00000005 [INF] Request finished in 9.1846ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:05:55.3919884+07:00 0HLK7J7LV8F6O:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:05:55.3931589+07:00 0HLK7J7LV8F6O:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:05:55.3933173+07:00 0HLK7J7LV8F6O:00000007 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:05:55.3935337+07:00 0HLK7J7LV8F6O:00000007 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:05:55.3940169+07:00 0HLK7J7LV8F6O:00000007 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:05:55.3950059+07:00 0HLK7J7LV8F6O:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:05:55.3961302+07:00 0HLK7J7LV8F6O:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:05:55.3965338+07:00 0HLK7J7LV8F6O:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:05:55.3968556+07:00 0HLK7J7LV8F6O:00000007 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.2637ms. (50a9e262)
+2019-02-01T00:05:55.3969928+07:00 0HLK7J7LV8F6O:00000007 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:05:55.3972437+07:00 0HLK7J7LV8F6O:00000007 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 4.0163ms (afa2e885)
+2019-02-01T00:05:55.3975094+07:00 0HLK7J7LV8F6O:00000007 [INF] Request finished in 5.579ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:05:58.2978631+07:00 0HLK7J7LV8F6P:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:05:58.2985211+07:00 0HLK7J7LV8F6P:00000006 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:05:58.2985864+07:00 0HLK7J7LV8F6P:00000006 [INF] Request finished in 0.7782ms 200 image/x-icon (791a596a)
+2019-02-01T00:05:59.1483447+07:00 0HLK7J7LV8F6S:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:05:59.1492772+07:00 0HLK7J7LV8F6S:00000004 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:05:59.1494170+07:00 0HLK7J7LV8F6S:00000004 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:05:59.1498340+07:00 0HLK7J7LV8F6S:00000004 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:05:59.1498839+07:00 0HLK7J7LV8F6S:00000004 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0061ms. (50a9e262)
+2019-02-01T00:05:59.1499697+07:00 0HLK7J7LV8F6S:00000004 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:05:59.1501100+07:00 0HLK7J7LV8F6S:00000004 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.7721ms (afa2e885)
+2019-02-01T00:05:59.1502175+07:00 0HLK7J7LV8F6S:00000004 [INF] Request finished in 1.9364ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:07:47.2442358+07:00 0HLK7J7LV8F6U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:07:47.2453128+07:00 0HLK7J7LV8F6U:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:07:47.2454469+07:00 0HLK7J7LV8F6U:00000001 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:07:47.2455472+07:00 0HLK7J7LV8F6U:00000001 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:07:47.2456037+07:00 0HLK7J7LV8F6U:00000001 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0092ms. (50a9e262)
+2019-02-01T00:07:47.2456978+07:00 0HLK7J7LV8F6U:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:07:47.2467474+07:00 0HLK7J7LV8F6U:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:07:47.2502554+07:00 0HLK7J7LV8F6U:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:07:47.2535011+07:00 0HLK7J7LV8F6U:00000001 [INF] Executed ViewResult - view "Index" executed in 7.7139ms. (f66409e9)
+2019-02-01T00:07:47.2536733+07:00 0HLK7J7LV8F6U:00000001 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 8.2613ms (afa2e885)
+2019-02-01T00:07:47.2854950+07:00 0HLK7J7LV8F6U:00000001 [INF] Request finished in 41.1414ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:07:47.3405853+07:00 0HLK7J7LV8F6U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-01T00:07:47.3420129+07:00 0HLK7J7LV8F70:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-02-01T00:07:47.3420895+07:00 0HLK7J7LV8F6U:00000002 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2019-02-01T00:07:47.3421553+07:00 0HLK7J7LV8F6U:00000002 [INF] Request finished in 1.7241ms 200 text/css (791a596a)
+2019-02-01T00:07:47.3423445+07:00 0HLK7J7LV8F71:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/style.bundle.css   (ca22a1cb)
+2019-02-01T00:07:47.3423738+07:00 0HLK7J7LV8F6V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.css   (ca22a1cb)
+2019-02-01T00:07:47.3425959+07:00 0HLK7J7LV8F70:00000001 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2019-02-01T00:07:47.3426411+07:00 0HLK7J7LV8F70:00000001 [INF] Request finished in 0.6842ms 200 text/css (791a596a)
+2019-02-01T00:07:47.3439925+07:00 0HLK7J7LV8F72:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/logo.png   (ca22a1cb)
+2019-02-01T00:07:47.3445616+07:00 0HLK7J7LV8F72:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/logo.png"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\logo.png"' (27b0a520)
+2019-02-01T00:07:47.3446407+07:00 0HLK7J7LV8F72:00000001 [INF] Request finished in 0.7083ms 200 image/png (791a596a)
+2019-02-01T00:07:47.3452098+07:00 0HLK7J7LV8F73:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css   (ca22a1cb)
+2019-02-01T00:07:47.3456432+07:00 0HLK7J7LV8F73:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css"' (27b0a520)
+2019-02-01T00:07:47.3461485+07:00 0HLK7J7LV8F73:00000001 [INF] Request finished in 0.4996ms 200 text/css (791a596a)
+2019-02-01T00:07:47.3463299+07:00 0HLK7J7LV8F6V:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.css"' (27b0a520)
+2019-02-01T00:07:47.3463813+07:00 0HLK7J7LV8F6V:00000001 [INF] Request finished in 4.0445ms 200 text/css (791a596a)
+2019-02-01T00:07:47.3470321+07:00 0HLK7J7LV8F74:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user4.jpg   (ca22a1cb)
+2019-02-01T00:07:47.3474568+07:00 0HLK7J7LV8F74:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user4.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user4.jpg"' (27b0a520)
+2019-02-01T00:07:47.3475076+07:00 0HLK7J7LV8F74:00000001 [INF] Request finished in 0.4996ms 200 image/jpeg (791a596a)
+2019-02-01T00:07:47.3600085+07:00 0HLK7J7LV8F71:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/style.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\style.bundle.css"' (27b0a520)
+2019-02-01T00:07:47.3601077+07:00 0HLK7J7LV8F71:00000001 [INF] Request finished in 17.7519ms 200 text/css (791a596a)
+2019-02-01T00:07:47.6520495+07:00 0HLK7J7LV8F6U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-01T00:07:47.6520495+07:00 0HLK7J7LV8F70:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-01T00:07:47.6532201+07:00 0HLK7J7LV8F70:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-01T00:07:47.6533177+07:00 0HLK7J7LV8F70:00000002 [INF] Request finished in 1.3236ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6550912+07:00 0HLK7J7LV8F6U:00000003 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-01T00:07:47.6554573+07:00 0HLK7J7LV8F6U:00000003 [INF] Request finished in 3.2827ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6721440+07:00 0HLK7J7LV8F74:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/mustache/mustache.js   (ca22a1cb)
+2019-02-01T00:07:47.6728863+07:00 0HLK7J7LV8F74:00000002 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-02-01T00:07:47.6741200+07:00 0HLK7J7LV8F72:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/moment/moment.js   (ca22a1cb)
+2019-02-01T00:07:47.6732349+07:00 0HLK7J7LV8F74:00000002 [INF] Request finished in 1.2753ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6742634+07:00 0HLK7J7LV8F6V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-02-01T00:07:47.6743431+07:00 0HLK7J7LV8F71:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-01T00:07:47.6743524+07:00 0HLK7J7LV8F73:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-01T00:07:47.6749564+07:00 0HLK7J7LV8F71:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-02-01T00:07:47.6750453+07:00 0HLK7J7LV8F71:00000002 [INF] Request finished in 0.695ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6753877+07:00 0HLK7J7LV8F73:00000002 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-01T00:07:47.6755769+07:00 0HLK7J7LV8F73:00000002 [INF] Request finished in 1.1864ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6778546+07:00 0HLK7J7LV8F72:00000002 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-01T00:07:47.6779605+07:00 0HLK7J7LV8F72:00000002 [INF] Request finished in 3.8672ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6780736+07:00 0HLK7J7LV8F70:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-01T00:07:47.6790406+07:00 0HLK7J7LV8F70:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-02-01T00:07:47.6791187+07:00 0HLK7J7LV8F70:00000003 [INF] Request finished in 1.0543ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6802625+07:00 0HLK7J7LV8F75:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-01T00:07:47.6810968+07:00 0HLK7J7LV8F76:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.js?v=gq1Lj7PHUNjW436RsYipn4esfDlfCTwXeToHSdniBLI   (ca22a1cb)
+2019-02-01T00:07:47.6814813+07:00 0HLK7J7LV8F6U:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-01T00:07:47.6827428+07:00 0HLK7J7LV8F6U:00000004 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-01T00:07:47.6828271+07:00 0HLK7J7LV8F6U:00000004 [INF] Request finished in 1.3586ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6838069+07:00 0HLK7J7LV8F74:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-02-01T00:07:47.6842649+07:00 0HLK7J7LV8F73:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=xjVO5WwzBX7mTaTxaccZNzRxwq7LSGftG7RYAhQGG_g   (ca22a1cb)
+2019-02-01T00:07:47.6846967+07:00 0HLK7J7LV8F73:00000003 [INF] Sending file. Request path: '"/admin-app/shared/be.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\shared\be.js"' (27b0a520)
+2019-02-01T00:07:47.6847471+07:00 0HLK7J7LV8F73:00000003 [INF] Request finished in 0.5048ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6849363+07:00 0HLK7J7LV8F74:00000003 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-02-01T00:07:47.6848489+07:00 0HLK7J7LV8F6V:00000002 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-02-01T00:07:47.6851373+07:00 0HLK7J7LV8F6V:00000002 [INF] Request finished in 10.863ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6850026+07:00 0HLK7J7LV8F74:00000003 [INF] Request finished in 1.2363ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6874125+07:00 0HLK7J7LV8F75:00000001 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-01T00:07:47.6875096+07:00 0HLK7J7LV8F75:00000001 [INF] Request finished in 7.3103ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6897566+07:00 0HLK7J7LV8F71:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/scripts.bundle.js?v=4eWUzQd3jwH7kuvJC1Ob80BkG4HgXyaAOF2jJy-M7SU   (ca22a1cb)
+2019-02-01T00:07:47.6941123+07:00 0HLK7J7LV8F71:00000003 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/scripts.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\scripts.bundle.js"' (27b0a520)
+2019-02-01T00:07:47.6942849+07:00 0HLK7J7LV8F71:00000003 [INF] Request finished in 4.4974ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.6958842+07:00 0HLK7J7LV8F73:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=FlK9GBfiLBBsOgJlYOdNGEK9C8nNVuyCE8rKl3recU4   (ca22a1cb)
+2019-02-01T00:07:47.6966542+07:00 0HLK7J7LV8F73:00000004 [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:07:47.6967750+07:00 0HLK7J7LV8F73:00000004 [INF] Request finished in 6.7644ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.7002454+07:00 0HLK7J7LV8F74:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-02-01T00:07:47.7007502+07:00 0HLK7J7LV8F74:00000004 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user3.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user3.jpg"' (27b0a520)
+2019-02-01T00:07:47.7008053+07:00 0HLK7J7LV8F74:00000004 [INF] Request finished in 0.6153ms 200 image/jpeg (791a596a)
+2019-02-01T00:07:47.7166829+07:00 0HLK7J7LV8F70:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-01T00:07:47.7172607+07:00 0HLK7J7LV8F70:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-02-01T00:07:47.7173419+07:00 0HLK7J7LV8F70:00000004 [INF] Request finished in 0.7649ms 200 application/javascript (791a596a)
+2019-02-01T00:07:47.8125451+07:00 0HLK7J7LV8F76:00000001 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.js"' (27b0a520)
+2019-02-01T00:07:47.8126289+07:00 0HLK7J7LV8F76:00000001 [INF] Request finished in 131.5588ms 200 application/javascript (791a596a)
+2019-02-01T00:07:48.0136358+07:00 0HLK7J7LV8F6U:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2?v=1.1.   (ca22a1cb)
+2019-02-01T00:07:48.0142686+07:00 0HLK7J7LV8F6U:00000005 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\line-awesome\line-awesome.woff2"' (27b0a520)
+2019-02-01T00:07:48.0143385+07:00 0HLK7J7LV8F6U:00000005 [INF] Request finished in 0.7695ms 200 font/woff2 (791a596a)
+2019-02-01T00:07:48.0156874+07:00 0HLK7J7LV8F73:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff   (ca22a1cb)
+2019-02-01T00:07:48.0162631+07:00 0HLK7J7LV8F73:00000005 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\flaticon\Flaticon.woff"' (27b0a520)
+2019-02-01T00:07:48.0163192+07:00 0HLK7J7LV8F73:00000005 [INF] Request finished in 0.6883ms 200 application/font-woff (791a596a)
+2019-02-01T00:07:48.3904802+07:00 0HLK7J7LV8F72:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:07:48.3914044+07:00 0HLK7J7LV8F72:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:07:48.3914913+07:00 0HLK7J7LV8F72:00000003 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:07:48.3916769+07:00 0HLK7J7LV8F72:00000003 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:07:48.3919714+07:00 0HLK7J7LV8F72:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:07:48.3933641+07:00 0HLK7J7LV8F72:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:07:48.3953046+07:00 0HLK7J7LV8F72:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:07:48.3991673+07:00 0HLK7J7LV8F72:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:07:48.3994505+07:00 0HLK7J7LV8F72:00000003 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.719ms. (50a9e262)
+2019-02-01T00:07:48.3995456+07:00 0HLK7J7LV8F72:00000003 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:07:48.3999090+07:00 0HLK7J7LV8F72:00000003 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 8.4428ms (afa2e885)
+2019-02-01T00:07:48.4001301+07:00 0HLK7J7LV8F72:00000003 [INF] Request finished in 9.7182ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:07:48.4190766+07:00 0HLK7J7LV8F74:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:07:48.4198693+07:00 0HLK7J7LV8F74:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:07:48.4199968+07:00 0HLK7J7LV8F74:00000005 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:07:48.4201849+07:00 0HLK7J7LV8F74:00000005 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:07:48.4204780+07:00 0HLK7J7LV8F74:00000005 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:07:48.4211144+07:00 0HLK7J7LV8F74:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:07:48.4220083+07:00 0HLK7J7LV8F74:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:07:48.4224273+07:00 0HLK7J7LV8F74:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:07:48.4226843+07:00 0HLK7J7LV8F74:00000005 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.4453ms. (50a9e262)
+2019-02-01T00:07:48.4227774+07:00 0HLK7J7LV8F74:00000005 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:07:48.4230200+07:00 0HLK7J7LV8F74:00000005 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 3.0807ms (afa2e885)
+2019-02-01T00:07:48.4232133+07:00 0HLK7J7LV8F74:00000005 [INF] Request finished in 4.1875ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:07:48.6444739+07:00 0HLK7J7LV8F75:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:07:48.6450831+07:00 0HLK7J7LV8F75:00000002 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:07:48.6451365+07:00 0HLK7J7LV8F75:00000002 [INF] Request finished in 0.7376ms 200 image/x-icon (791a596a)
+2019-02-01T00:07:51.7381145+07:00 0HLK7J7LV8F70:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:07:51.7387657+07:00 0HLK7J7LV8F70:00000005 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:07:51.7388474+07:00 0HLK7J7LV8F70:00000005 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:07:51.7391004+07:00 0HLK7J7LV8F70:00000005 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:07:51.7391348+07:00 0HLK7J7LV8F70:00000005 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0041ms. (50a9e262)
+2019-02-01T00:07:51.7391893+07:00 0HLK7J7LV8F70:00000005 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:07:51.7392875+07:00 0HLK7J7LV8F70:00000005 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.4796ms (afa2e885)
+2019-02-01T00:07:51.7393749+07:00 0HLK7J7LV8F70:00000005 [INF] Request finished in 1.3221ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:29.5495945+07:00 0HLK7J7LV8F71:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:08:29.5504453+07:00 0HLK7J7LV8F71:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:29.5505600+07:00 0HLK7J7LV8F71:00000004 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:29.5506725+07:00 0HLK7J7LV8F71:00000004 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:08:29.5507347+07:00 0HLK7J7LV8F71:00000004 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0097ms. (50a9e262)
+2019-02-01T00:08:29.5508180+07:00 0HLK7J7LV8F71:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:08:29.5518821+07:00 0HLK7J7LV8F71:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:08:29.5552045+07:00 0HLK7J7LV8F71:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:08:29.5577927+07:00 0HLK7J7LV8F71:00000004 [INF] Executed ViewResult - view "Index" executed in 6.9937ms. (f66409e9)
+2019-02-01T00:08:29.5578508+07:00 0HLK7J7LV8F71:00000004 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 7.3576ms (afa2e885)
+2019-02-01T00:08:29.5843314+07:00 0HLK7J7LV8F71:00000004 [INF] Request finished in 34.7106ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:08:29.6239060+07:00 0HLK7J7LV8F6V:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-01T00:08:29.6244637+07:00 0HLK7J7LV8F6V:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2019-02-01T00:08:29.6246061+07:00 0HLK7J7LV8F6V:00000003 [INF] Request finished in 0.7335ms 200 text/css (791a596a)
+2019-02-01T00:08:29.6249567+07:00 0HLK7J7LV8F76:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-02-01T00:08:29.6257494+07:00 0HLK7J7LV8F6U:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css   (ca22a1cb)
+2019-02-01T00:08:29.6257494+07:00 0HLK7J7LV8F76:00000002 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2019-02-01T00:08:29.6257561+07:00 0HLK7J7LV8F73:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.css   (ca22a1cb)
+2019-02-01T00:08:29.6257988+07:00 0HLK7J7LV8F76:00000002 [INF] Request finished in 0.8728ms 200 text/css (791a596a)
+2019-02-01T00:08:29.6261689+07:00 0HLK7J7LV8F72:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/style.bundle.css   (ca22a1cb)
+2019-02-01T00:08:29.6262100+07:00 0HLK7J7LV8F74:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user4.jpg   (ca22a1cb)
+2019-02-01T00:08:29.6263488+07:00 0HLK7J7LV8F75:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/logo.png   (ca22a1cb)
+2019-02-01T00:08:29.6265498+07:00 0HLK7J7LV8F6U:00000006 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css"' (27b0a520)
+2019-02-01T00:08:29.6265961+07:00 0HLK7J7LV8F74:00000006 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user4.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user4.jpg"' (27b0a520)
+2019-02-01T00:08:29.6266382+07:00 0HLK7J7LV8F74:00000006 [INF] Request finished in 0.441ms 200 image/jpeg (791a596a)
+2019-02-01T00:08:29.6265966+07:00 0HLK7J7LV8F6U:00000006 [INF] Request finished in 0.8615ms 200 text/css (791a596a)
+2019-02-01T00:08:29.6267611+07:00 0HLK7J7LV8F75:00000003 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/logo.png"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\logo.png"' (27b0a520)
+2019-02-01T00:08:29.6268392+07:00 0HLK7J7LV8F75:00000003 [INF] Request finished in 0.4883ms 200 image/png (791a596a)
+2019-02-01T00:08:29.6334659+07:00 0HLK7J7LV8F73:00000006 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.css"' (27b0a520)
+2019-02-01T00:08:29.6335533+07:00 0HLK7J7LV8F73:00000006 [INF] Request finished in 7.8085ms 200 text/css (791a596a)
+2019-02-01T00:08:29.6480121+07:00 0HLK7J7LV8F72:00000004 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/style.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\style.bundle.css"' (27b0a520)
+2019-02-01T00:08:29.6482599+07:00 0HLK7J7LV8F72:00000004 [INF] Request finished in 21.9753ms 200 text/css (791a596a)
+2019-02-01T00:08:29.8851504+07:00 0HLK7J7LV8F71:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-01T00:08:29.8851509+07:00 0HLK7J7LV8F70:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-01T00:08:29.8864711+07:00 0HLK7J7LV8F71:00000005 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-01T00:08:29.8866371+07:00 0HLK7J7LV8F71:00000005 [INF] Request finished in 1.5231ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.8875640+07:00 0HLK7J7LV8F70:00000006 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-01T00:08:29.8876673+07:00 0HLK7J7LV8F70:00000006 [INF] Request finished in 2.5528ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9042472+07:00 0HLK7J7LV8F6V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/mustache/mustache.js   (ca22a1cb)
+2019-02-01T00:08:29.9056608+07:00 0HLK7J7LV8F6V:00000004 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-02-01T00:08:29.9057446+07:00 0HLK7J7LV8F6V:00000004 [INF] Request finished in 1.5796ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9062417+07:00 0HLK7J7LV8F74:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-01T00:08:29.9067290+07:00 0HLK7J7LV8F6U:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-01T00:08:29.9068868+07:00 0HLK7J7LV8F76:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-01T00:08:29.9070667+07:00 0HLK7J7LV8F75:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-01T00:08:29.9071454+07:00 0HLK7J7LV8F73:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-01T00:08:29.9072122+07:00 0HLK7J7LV8F72:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-02-01T00:08:29.9074435+07:00 0HLK7J7LV8F71:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/moment/moment.js   (ca22a1cb)
+2019-02-01T00:08:29.9075170+07:00 0HLK7J7LV8F77:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-02-01T00:08:29.9075407+07:00 0HLK7J7LV8F78:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=xjVO5WwzBX7mTaTxaccZNzRxwq7LSGftG7RYAhQGG_g   (ca22a1cb)
+2019-02-01T00:08:29.9077597+07:00 0HLK7J7LV8F6U:00000007 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-02-01T00:08:29.9078142+07:00 0HLK7J7LV8F6U:00000007 [INF] Request finished in 1.1072ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9078465+07:00 0HLK7J7LV8F76:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-02-01T00:08:29.9078512+07:00 0HLK7J7LV8F77:00000001 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-02-01T00:08:29.9078830+07:00 0HLK7J7LV8F76:00000003 [INF] Request finished in 1.0183ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9078810+07:00 0HLK7J7LV8F73:00000007 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-02-01T00:08:29.9078851+07:00 0HLK7J7LV8F77:00000001 [INF] Request finished in 0.3798ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9079077+07:00 0HLK7J7LV8F73:00000007 [INF] Request finished in 0.7859ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9079463+07:00 0HLK7J7LV8F70:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-01T00:08:29.9083303+07:00 0HLK7J7LV8F78:00000001 [INF] Sending file. Request path: '"/admin-app/shared/be.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\shared\be.js"' (27b0a520)
+2019-02-01T00:08:29.9083709+07:00 0HLK7J7LV8F78:00000001 [INF] Request finished in 0.8461ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9110578+07:00 0HLK7J7LV8F75:00000004 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-01T00:08:29.9111278+07:00 0HLK7J7LV8F75:00000004 [INF] Request finished in 4.0759ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9127665+07:00 0HLK7J7LV8F71:00000006 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-01T00:08:29.9128606+07:00 0HLK7J7LV8F71:00000006 [INF] Request finished in 5.3919ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9131243+07:00 0HLK7J7LV8F70:00000007 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-01T00:08:29.9131665+07:00 0HLK7J7LV8F70:00000007 [INF] Request finished in 5.2258ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9134045+07:00 0HLK7J7LV8F6V:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=QruC8ssX5ar4o-cL8Exos0PsOyrDv5IPWeBpC9i3T7c   (ca22a1cb)
+2019-02-01T00:08:29.9138579+07:00 0HLK7J7LV8F6V:00000005 [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:08:29.9138985+07:00 0HLK7J7LV8F6V:00000005 [INF] Request finished in 0.5125ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9141915+07:00 0HLK7J7LV8F74:00000007 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-01T00:08:29.9142270+07:00 0HLK7J7LV8F74:00000007 [INF] Request finished in 8.0233ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9156607+07:00 0HLK7J7LV8F72:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-02-01T00:08:29.9160154+07:00 0HLK7J7LV8F72:00000005 [INF] Request finished in 8.7877ms 200 application/javascript (791a596a)
+2019-02-01T00:08:29.9205674+07:00 0HLK7J7LV8F73:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-02-01T00:08:29.9210917+07:00 0HLK7J7LV8F73:00000008 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user3.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user3.jpg"' (27b0a520)
+2019-02-01T00:08:29.9211616+07:00 0HLK7J7LV8F73:00000008 [INF] Request finished in 0.6477ms 200 image/jpeg (791a596a)
+2019-02-01T00:08:29.9227573+07:00 0HLK7J7LV8F77:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.js?v=gq1Lj7PHUNjW436RsYipn4esfDlfCTwXeToHSdniBLI   (ca22a1cb)
+2019-02-01T00:08:29.9399767+07:00 0HLK7J7LV8F6U:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/scripts.bundle.js?v=4eWUzQd3jwH7kuvJC1Ob80BkG4HgXyaAOF2jJy-M7SU   (ca22a1cb)
+2019-02-01T00:08:29.9423906+07:00 0HLK7J7LV8F6U:00000008 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/scripts.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\scripts.bundle.js"' (27b0a520)
+2019-02-01T00:08:29.9424734+07:00 0HLK7J7LV8F6U:00000008 [INF] Request finished in 2.6766ms 200 application/javascript (791a596a)
+2019-02-01T00:08:30.0288113+07:00 0HLK7J7LV8F77:00000002 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.js"' (27b0a520)
+2019-02-01T00:08:30.0289300+07:00 0HLK7J7LV8F77:00000002 [INF] Request finished in 106.2102ms 200 application/javascript (791a596a)
+2019-02-01T00:08:30.2322146+07:00 0HLK7J7LV8F6V:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2?v=1.1.   (ca22a1cb)
+2019-02-01T00:08:30.2322151+07:00 0HLK7J7LV8F76:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff   (ca22a1cb)
+2019-02-01T00:08:30.2328232+07:00 0HLK7J7LV8F76:00000004 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\flaticon\Flaticon.woff"' (27b0a520)
+2019-02-01T00:08:30.2328828+07:00 0HLK7J7LV8F76:00000004 [INF] Request finished in 0.6991ms 200 application/font-woff (791a596a)
+2019-02-01T00:08:30.2329589+07:00 0HLK7J7LV8F6V:00000006 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\line-awesome\line-awesome.woff2"' (27b0a520)
+2019-02-01T00:08:30.2330021+07:00 0HLK7J7LV8F6V:00000006 [INF] Request finished in 0.8271ms 200 font/woff2 (791a596a)
+2019-02-01T00:08:30.5937643+07:00 0HLK7J7LV8F70:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:08:30.5950062+07:00 0HLK7J7LV8F70:00000008 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:30.5951095+07:00 0HLK7J7LV8F70:00000008 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:30.5952673+07:00 0HLK7J7LV8F70:00000008 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:08:30.5955408+07:00 0HLK7J7LV8F70:00000008 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:08:30.5967823+07:00 0HLK7J7LV8F70:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:08:30.5985558+07:00 0HLK7J7LV8F70:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:08:30.6018575+07:00 0HLK7J7LV8F70:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:08:30.6021331+07:00 0HLK7J7LV8F70:00000008 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.8112ms. (50a9e262)
+2019-02-01T00:08:30.6022256+07:00 0HLK7J7LV8F70:00000008 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:08:30.6025289+07:00 0HLK7J7LV8F70:00000008 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 7.4687ms (afa2e885)
+2019-02-01T00:08:30.6027171+07:00 0HLK7J7LV8F70:00000008 [INF] Request finished in 9.0401ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:30.6259134+07:00 0HLK7J7LV8F78:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:08:30.6268721+07:00 0HLK7J7LV8F78:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:30.6269589+07:00 0HLK7J7LV8F78:00000002 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:30.6271291+07:00 0HLK7J7LV8F78:00000002 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:08:30.6274447+07:00 0HLK7J7LV8F78:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:08:30.6281388+07:00 0HLK7J7LV8F78:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:08:30.6291664+07:00 0HLK7J7LV8F78:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:08:30.6296414+07:00 0HLK7J7LV8F78:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:08:30.6298952+07:00 0HLK7J7LV8F78:00000002 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.7147ms. (50a9e262)
+2019-02-01T00:08:30.6299919+07:00 0HLK7J7LV8F78:00000002 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:08:30.6302710+07:00 0HLK7J7LV8F78:00000002 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 3.3439ms (afa2e885)
+2019-02-01T00:08:30.6304653+07:00 0HLK7J7LV8F78:00000002 [INF] Request finished in 4.5982ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:30.8645111+07:00 0HLK7J7LV8F75:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:08:30.8651871+07:00 0HLK7J7LV8F75:00000005 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:08:30.8652631+07:00 0HLK7J7LV8F75:00000005 [INF] Request finished in 0.8266ms 200 image/x-icon (791a596a)
+2019-02-01T00:08:32.7181721+07:00 0HLK7J7LV8F73:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:08:32.7190342+07:00 0HLK7J7LV8F73:00000009 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:32.7191452+07:00 0HLK7J7LV8F73:00000009 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:32.7195611+07:00 0HLK7J7LV8F73:00000009 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:08:32.7196218+07:00 0HLK7J7LV8F73:00000009 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0066ms. (50a9e262)
+2019-02-01T00:08:32.7196989+07:00 0HLK7J7LV8F73:00000009 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:08:32.7198264+07:00 0HLK7J7LV8F73:00000009 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.7366ms (afa2e885)
+2019-02-01T00:08:32.7199107+07:00 0HLK7J7LV8F73:00000009 [INF] Request finished in 1.7796ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:55.0901119+07:00 0HLK7J7LV8F71:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:08:55.0910743+07:00 0HLK7J7LV8F71:00000007 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:55.0914706+07:00 0HLK7J7LV8F71:00000007 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:55.0915893+07:00 0HLK7J7LV8F71:00000007 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:08:55.0916772+07:00 0HLK7J7LV8F71:00000007 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0077ms. (50a9e262)
+2019-02-01T00:08:55.0919132+07:00 0HLK7J7LV8F71:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:08:55.0939031+07:00 0HLK7J7LV8F71:00000007 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:08:55.0985672+07:00 0HLK7J7LV8F71:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:08:55.1016874+07:00 0HLK7J7LV8F71:00000007 [INF] Executed ViewResult - view "Index" executed in 9.9063ms. (f66409e9)
+2019-02-01T00:08:55.1018267+07:00 0HLK7J7LV8F71:00000007 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 10.6712ms (afa2e885)
+2019-02-01T00:08:55.1599789+07:00 0HLK7J7LV8F71:00000007 [INF] Request finished in 69.7954ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:08:55.6445520+07:00 0HLK7J7LV8F74:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=C6MTA3P0yyOsdiU-NqOBka9Qe1GM_pM1n4iyMW5ulno   (ca22a1cb)
+2019-02-01T00:08:55.6446805+07:00 0HLK7J7LV8F72:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=xjVO5WwzBX7mTaTxaccZNzRxwq7LSGftG7RYAhQGG_g   (ca22a1cb)
+2019-02-01T00:08:55.6450388+07:00 0HLK7J7LV8F72:00000006 [INF] The file "/admin-app/shared/be.js" was not modified (f1f8d725)
+2019-02-01T00:08:55.6451406+07:00 0HLK7J7LV8F72:00000006 [INF] Request finished in 0.5227ms 304 application/javascript (791a596a)
+2019-02-01T00:08:55.6453051+07:00 0HLK7J7LV8F74:00000008 [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:08:55.6454270+07:00 0HLK7J7LV8F74:00000008 [INF] Request finished in 0.8924ms 200 application/javascript (791a596a)
+2019-02-01T00:08:56.2312893+07:00 0HLK7J7LV8F6U:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:08:56.2323914+07:00 0HLK7J7LV8F6U:00000009 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:56.2324953+07:00 0HLK7J7LV8F6U:00000009 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:56.2327174+07:00 0HLK7J7LV8F6U:00000009 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:08:56.2331111+07:00 0HLK7J7LV8F6U:00000009 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:08:56.2339382+07:00 0HLK7J7LV8F6U:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:08:56.2351159+07:00 0HLK7J7LV8F6U:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:08:56.2356660+07:00 0HLK7J7LV8F6U:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:08:56.2360376+07:00 0HLK7J7LV8F6U:00000009 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.2462ms. (50a9e262)
+2019-02-01T00:08:56.2361600+07:00 0HLK7J7LV8F6U:00000009 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:08:56.2365337+07:00 0HLK7J7LV8F6U:00000009 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 4.0733ms (afa2e885)
+2019-02-01T00:08:56.2368482+07:00 0HLK7J7LV8F6U:00000009 [INF] Request finished in 5.6397ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:56.3073429+07:00 0HLK7J7LV8F77:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:08:56.3084804+07:00 0HLK7J7LV8F77:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:56.3086084+07:00 0HLK7J7LV8F77:00000003 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:56.3089457+07:00 0HLK7J7LV8F77:00000003 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:08:56.3093538+07:00 0HLK7J7LV8F77:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:08:56.3101764+07:00 0HLK7J7LV8F77:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:08:56.3112528+07:00 0HLK7J7LV8F77:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:08:56.3117802+07:00 0HLK7J7LV8F77:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:08:56.3122136+07:00 0HLK7J7LV8F77:00000003 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.1573ms. (50a9e262)
+2019-02-01T00:08:56.3123683+07:00 0HLK7J7LV8F77:00000003 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:08:56.3127589+07:00 0HLK7J7LV8F77:00000003 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 4.188ms (afa2e885)
+2019-02-01T00:08:56.3130175+07:00 0HLK7J7LV8F77:00000003 [INF] Request finished in 5.7296ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:56.5427417+07:00 0HLK7J7LV8F76:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:08:56.5435035+07:00 0HLK7J7LV8F76:00000005 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:08:56.5436603+07:00 0HLK7J7LV8F76:00000005 [INF] Request finished in 0.9628ms 200 image/x-icon (791a596a)
+2019-02-01T00:08:57.8690929+07:00 0HLK7J7LV8F6V:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:08:57.8700104+07:00 0HLK7J7LV8F6V:00000007 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:57.8701096+07:00 0HLK7J7LV8F6V:00000007 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:57.8705507+07:00 0HLK7J7LV8F6V:00000007 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:08:57.8706186+07:00 0HLK7J7LV8F6V:00000007 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0066ms. (50a9e262)
+2019-02-01T00:08:57.8707147+07:00 0HLK7J7LV8F6V:00000007 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:08:57.8708818+07:00 0HLK7J7LV8F6V:00000007 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.8142ms (afa2e885)
+2019-02-01T00:08:57.8709846+07:00 0HLK7J7LV8F6V:00000007 [INF] Request finished in 1.9374ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:08:58.7664878+07:00 0HLK7J7LV8F70:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:08:58.7674321+07:00 0HLK7J7LV8F70:00000009 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:08:58.7675226+07:00 0HLK7J7LV8F70:00000009 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:08:58.7678839+07:00 0HLK7J7LV8F70:00000009 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:08:58.7679384+07:00 0HLK7J7LV8F70:00000009 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0061ms. (50a9e262)
+2019-02-01T00:08:58.7680124+07:00 0HLK7J7LV8F70:00000009 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:08:58.7681481+07:00 0HLK7J7LV8F70:00000009 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.659ms (afa2e885)
+2019-02-01T00:08:58.7682324+07:00 0HLK7J7LV8F70:00000009 [INF] Request finished in 1.8161ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:03.7871724+07:00 0HLK7J7LV8F78:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:09:03.7881162+07:00 0HLK7J7LV8F78:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:03.7882139+07:00 0HLK7J7LV8F78:00000003 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:03.7882956+07:00 0HLK7J7LV8F78:00000003 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:09:03.7883460+07:00 0HLK7J7LV8F78:00000003 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0071ms. (50a9e262)
+2019-02-01T00:09:03.7884652+07:00 0HLK7J7LV8F78:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:09:03.7896666+07:00 0HLK7J7LV8F78:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:03.7913866+07:00 0HLK7J7LV8F78:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:09:03.7945368+07:00 0HLK7J7LV8F78:00000003 [INF] Executed ViewResult - view "Index" executed in 5.9815ms. (f66409e9)
+2019-02-01T00:09:03.7949752+07:00 0HLK7J7LV8F78:00000003 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 6.6806ms (afa2e885)
+2019-02-01T00:09:03.8244970+07:00 0HLK7J7LV8F78:00000003 [INF] Request finished in 37.3369ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:09:03.8712334+07:00 0HLK7J7LV8F75:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-01T00:09:03.8719140+07:00 0HLK7J7LV8F75:00000006 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2019-02-01T00:09:03.8720312+07:00 0HLK7J7LV8F75:00000006 [INF] Request finished in 0.8389ms 200 text/css (791a596a)
+2019-02-01T00:09:03.8720425+07:00 0HLK7J7LV8F73:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-02-01T00:09:03.8727257+07:00 0HLK7J7LV8F73:0000000A [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2019-02-01T00:09:03.8727828+07:00 0HLK7J7LV8F73:0000000A [INF] Request finished in 0.7566ms 200 text/css (791a596a)
+2019-02-01T00:09:03.8732156+07:00 0HLK7J7LV8F71:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css   (ca22a1cb)
+2019-02-01T00:09:03.8737481+07:00 0HLK7J7LV8F71:00000008 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css"' (27b0a520)
+2019-02-01T00:09:03.8738057+07:00 0HLK7J7LV8F71:00000008 [INF] Request finished in 0.6754ms 200 text/css (791a596a)
+2019-02-01T00:09:03.8746267+07:00 0HLK7J7LV8F72:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.css   (ca22a1cb)
+2019-02-01T00:09:03.8746950+07:00 0HLK7J7LV8F74:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user4.jpg   (ca22a1cb)
+2019-02-01T00:09:03.8751268+07:00 0HLK7J7LV8F6U:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/style.bundle.css   (ca22a1cb)
+2019-02-01T00:09:03.8751777+07:00 0HLK7J7LV8F74:00000009 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user4.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user4.jpg"' (27b0a520)
+2019-02-01T00:09:03.8752348+07:00 0HLK7J7LV8F74:00000009 [INF] Request finished in 0.5577ms 200 image/jpeg (791a596a)
+2019-02-01T00:09:03.8766881+07:00 0HLK7J7LV8F77:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/logo.png   (ca22a1cb)
+2019-02-01T00:09:03.8771482+07:00 0HLK7J7LV8F77:00000004 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/logo.png"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\logo.png"' (27b0a520)
+2019-02-01T00:09:03.8772098+07:00 0HLK7J7LV8F77:00000004 [INF] Request finished in 0.5608ms 200 image/png (791a596a)
+2019-02-01T00:09:03.8832541+07:00 0HLK7J7LV8F72:00000007 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.css"' (27b0a520)
+2019-02-01T00:09:03.8833755+07:00 0HLK7J7LV8F72:00000007 [INF] Request finished in 8.7492ms 200 text/css (791a596a)
+2019-02-01T00:09:03.9105495+07:00 0HLK7J7LV8F6U:0000000A [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/style.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\style.bundle.css"' (27b0a520)
+2019-02-01T00:09:03.9111088+07:00 0HLK7J7LV8F6U:0000000A [INF] Request finished in 35.6061ms 200 text/css (791a596a)
+2019-02-01T00:09:04.0330758+07:00 0HLK7J7LV8F6V:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-01T00:09:04.0330758+07:00 0HLK7J7LV8F76:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-01T00:09:04.0341224+07:00 0HLK7J7LV8F76:00000006 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-01T00:09:04.0342324+07:00 0HLK7J7LV8F76:00000006 [INF] Request finished in 1.2301ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0358569+07:00 0HLK7J7LV8F6V:00000008 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-01T00:09:04.0359802+07:00 0HLK7J7LV8F6V:00000008 [INF] Request finished in 2.9722ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0511983+07:00 0HLK7J7LV8F70:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/mustache/mustache.js   (ca22a1cb)
+2019-02-01T00:09:04.0515885+07:00 0HLK7J7LV8F78:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-01T00:09:04.0520049+07:00 0HLK7J7LV8F75:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-01T00:09:04.0521221+07:00 0HLK7J7LV8F70:0000000A [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-02-01T00:09:04.0522142+07:00 0HLK7J7LV8F70:0000000A [INF] Request finished in 1.0872ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0526352+07:00 0HLK7J7LV8F78:00000004 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-01T00:09:04.0526948+07:00 0HLK7J7LV8F78:00000004 [INF] Request finished in 1.1319ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0544431+07:00 0HLK7J7LV8F73:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-01T00:09:04.0551746+07:00 0HLK7J7LV8F73:0000000B [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-02-01T00:09:04.0552764+07:00 0HLK7J7LV8F73:0000000B [INF] Request finished in 0.8574ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0560110+07:00 0HLK7J7LV8F71:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-01T00:09:04.0566161+07:00 0HLK7J7LV8F71:00000009 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-02-01T00:09:04.0567338+07:00 0HLK7J7LV8F71:00000009 [INF] Request finished in 0.7561ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0586342+07:00 0HLK7J7LV8F75:00000007 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-01T00:09:04.0587278+07:00 0HLK7J7LV8F75:00000007 [INF] Request finished in 6.7218ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0607146+07:00 0HLK7J7LV8F74:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-01T00:09:04.0638925+07:00 0HLK7J7LV8F77:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-02-01T00:09:04.0670837+07:00 0HLK7J7LV8F74:0000000A [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-02-01T00:09:04.0671814+07:00 0HLK7J7LV8F74:0000000A [INF] Request finished in 6.5017ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0757718+07:00 0HLK7J7LV8F77:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-02-01T00:09:04.0765285+07:00 0HLK7J7LV8F77:00000005 [INF] Request finished in 12.0978ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0774044+07:00 0HLK7J7LV8F72:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/moment/moment.js   (ca22a1cb)
+2019-02-01T00:09:04.0787338+07:00 0HLK7J7LV8F6U:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-01T00:09:04.0796390+07:00 0HLK7J7LV8F76:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.js?v=gq1Lj7PHUNjW436RsYipn4esfDlfCTwXeToHSdniBLI   (ca22a1cb)
+2019-02-01T00:09:04.0796416+07:00 0HLK7J7LV8F72:00000008 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-01T00:09:04.0797449+07:00 0HLK7J7LV8F72:00000008 [INF] Request finished in 2.3697ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0798349+07:00 0HLK7J7LV8F6U:0000000B [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-01T00:09:04.0798930+07:00 0HLK7J7LV8F6U:0000000B [INF] Request finished in 1.192ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.0893311+07:00 0HLK7J7LV8F6V:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/scripts.bundle.js?v=4eWUzQd3jwH7kuvJC1Ob80BkG4HgXyaAOF2jJy-M7SU   (ca22a1cb)
+2019-02-01T00:09:04.0952956+07:00 0HLK7J7LV8F6V:00000009 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/scripts.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\scripts.bundle.js"' (27b0a520)
+2019-02-01T00:09:04.0954010+07:00 0HLK7J7LV8F6V:00000009 [INF] Request finished in 6.1121ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.1009030+07:00 0HLK7J7LV8F70:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=xjVO5WwzBX7mTaTxaccZNzRxwq7LSGftG7RYAhQGG_g   (ca22a1cb)
+2019-02-01T00:09:04.1015014+07:00 0HLK7J7LV8F70:0000000B [INF] Sending file. Request path: '"/admin-app/shared/be.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\shared\be.js"' (27b0a520)
+2019-02-01T00:09:04.1015672+07:00 0HLK7J7LV8F70:0000000B [INF] Request finished in 0.7392ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.1016664+07:00 0HLK7J7LV8F78:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-02-01T00:09:04.1021747+07:00 0HLK7J7LV8F78:00000005 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-02-01T00:09:04.1022518+07:00 0HLK7J7LV8F78:00000005 [INF] Request finished in 0.5891ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.1108819+07:00 0HLK7J7LV8F73:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=BXIhay_VHa7YFpGx7crQFmMz7u5l0i9U3nWWi3eofvc   (ca22a1cb)
+2019-02-01T00:09:04.1114566+07:00 0HLK7J7LV8F73:0000000C [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:09:04.1115723+07:00 0HLK7J7LV8F73:0000000C [INF] Request finished in 0.7371ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.1153819+07:00 0HLK7J7LV8F71:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-02-01T00:09:04.1167076+07:00 0HLK7J7LV8F71:0000000A [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user3.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user3.jpg"' (27b0a520)
+2019-02-01T00:09:04.1169945+07:00 0HLK7J7LV8F71:0000000A [INF] Request finished in 1.4897ms 200 image/jpeg (791a596a)
+2019-02-01T00:09:04.1967560+07:00 0HLK7J7LV8F76:00000007 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.js"' (27b0a520)
+2019-02-01T00:09:04.1969313+07:00 0HLK7J7LV8F76:00000007 [INF] Request finished in 117.303ms 200 application/javascript (791a596a)
+2019-02-01T00:09:04.3203803+07:00 0HLK7J7LV8F74:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2?v=1.1.   (ca22a1cb)
+2019-02-01T00:09:04.3209119+07:00 0HLK7J7LV8F75:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff   (ca22a1cb)
+2019-02-01T00:09:04.3217652+07:00 0HLK7J7LV8F75:00000008 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\flaticon\Flaticon.woff"' (27b0a520)
+2019-02-01T00:09:04.3217637+07:00 0HLK7J7LV8F74:0000000B [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\line-awesome\line-awesome.woff2"' (27b0a520)
+2019-02-01T00:09:04.3218367+07:00 0HLK7J7LV8F75:00000008 [INF] Request finished in 1.7508ms 200 application/font-woff (791a596a)
+2019-02-01T00:09:04.3218424+07:00 0HLK7J7LV8F74:0000000B [INF] Request finished in 1.7693ms 200 font/woff2 (791a596a)
+2019-02-01T00:09:04.6692977+07:00 0HLK7J7LV8F6U:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:09:04.6705391+07:00 0HLK7J7LV8F6U:0000000C [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:04.6706671+07:00 0HLK7J7LV8F6U:0000000C [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:04.6708990+07:00 0HLK7J7LV8F6U:0000000C [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:09:04.6713420+07:00 0HLK7J7LV8F6U:0000000C [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:04.6723296+07:00 0HLK7J7LV8F6U:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:09:04.6734857+07:00 0HLK7J7LV8F6U:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:09:04.6740825+07:00 0HLK7J7LV8F6U:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:09:04.6743904+07:00 0HLK7J7LV8F6U:0000000C [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.4081ms. (50a9e262)
+2019-02-01T00:09:04.6745441+07:00 0HLK7J7LV8F6U:0000000C [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:09:04.6749877+07:00 0HLK7J7LV8F6U:0000000C [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 4.353ms (afa2e885)
+2019-02-01T00:09:04.6752838+07:00 0HLK7J7LV8F6U:0000000C [INF] Request finished in 6.0231ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:04.6958014+07:00 0HLK7J7LV8F72:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:09:04.6967616+07:00 0HLK7J7LV8F72:00000009 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:04.6968598+07:00 0HLK7J7LV8F72:00000009 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:04.6970634+07:00 0HLK7J7LV8F72:00000009 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:09:04.6974289+07:00 0HLK7J7LV8F72:00000009 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:04.6983074+07:00 0HLK7J7LV8F72:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:09:04.6995231+07:00 0HLK7J7LV8F72:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:09:04.7001200+07:00 0HLK7J7LV8F72:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:09:04.7005199+07:00 0HLK7J7LV8F72:00000009 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.3783ms. (50a9e262)
+2019-02-01T00:09:04.7006413+07:00 0HLK7J7LV8F72:00000009 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:09:04.7011085+07:00 0HLK7J7LV8F72:00000009 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 4.2666ms (afa2e885)
+2019-02-01T00:09:04.7013861+07:00 0HLK7J7LV8F72:00000009 [INF] Request finished in 5.617ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:04.8517893+07:00 0HLK7J7LV8F70:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:09:04.8523192+07:00 0HLK7J7LV8F70:0000000C [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:09:04.8523917+07:00 0HLK7J7LV8F70:0000000C [INF] Request finished in 0.6487ms 200 image/x-icon (791a596a)
+2019-02-01T00:09:06.4994663+07:00 0HLK7J7LV8F6V:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:09:06.5003993+07:00 0HLK7J7LV8F6V:0000000A [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:06.5005288+07:00 0HLK7J7LV8F6V:0000000A [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:06.5009535+07:00 0HLK7J7LV8F6V:0000000A [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:09:06.5010383+07:00 0HLK7J7LV8F6V:0000000A [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0107ms. (50a9e262)
+2019-02-01T00:09:06.5011313+07:00 0HLK7J7LV8F6V:0000000A [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:09:06.5012783+07:00 0HLK7J7LV8F6V:0000000A [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.8044ms (afa2e885)
+2019-02-01T00:09:06.5014053+07:00 0HLK7J7LV8F6V:0000000A [INF] Request finished in 1.9662ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:07.3112096+07:00 0HLK7J7LV8F78:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:09:07.3122907+07:00 0HLK7J7LV8F78:00000006 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:07.3124505+07:00 0HLK7J7LV8F78:00000006 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:07.3128741+07:00 0HLK7J7LV8F78:00000006 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:09:07.3129476+07:00 0HLK7J7LV8F78:00000006 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0082ms. (50a9e262)
+2019-02-01T00:09:07.3130608+07:00 0HLK7J7LV8F78:00000006 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:09:07.3132458+07:00 0HLK7J7LV8F78:00000006 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.878ms (afa2e885)
+2019-02-01T00:09:07.3133522+07:00 0HLK7J7LV8F78:00000006 [INF] Request finished in 2.2022ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:07.5199304+07:00 0HLK7J7LV8F73:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:09:07.5212649+07:00 0HLK7J7LV8F73:0000000D [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:07.5213790+07:00 0HLK7J7LV8F73:0000000D [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:07.5218807+07:00 0HLK7J7LV8F73:0000000D [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:09:07.5220133+07:00 0HLK7J7LV8F73:0000000D [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0071ms. (50a9e262)
+2019-02-01T00:09:07.5221346+07:00 0HLK7J7LV8F73:0000000D [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:09:07.5223001+07:00 0HLK7J7LV8F73:0000000D [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.9607ms (afa2e885)
+2019-02-01T00:09:07.5224174+07:00 0HLK7J7LV8F73:0000000D [INF] Request finished in 2.6684ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:07.6790997+07:00 0HLK7J7LV8F71:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:09:07.6802820+07:00 0HLK7J7LV8F71:0000000B [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:07.6803931+07:00 0HLK7J7LV8F71:0000000B [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:07.6808269+07:00 0HLK7J7LV8F71:0000000B [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:09:07.6809045+07:00 0HLK7J7LV8F71:0000000B [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0066ms. (50a9e262)
+2019-02-01T00:09:07.6810012+07:00 0HLK7J7LV8F71:0000000B [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:09:07.6811713+07:00 0HLK7J7LV8F71:0000000B [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.8168ms (afa2e885)
+2019-02-01T00:09:07.6812886+07:00 0HLK7J7LV8F71:0000000B [INF] Request finished in 2.2664ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:19.6385797+07:00 0HLK7J7LV8F77:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:09:19.6396459+07:00 0HLK7J7LV8F77:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:19.6397492+07:00 0HLK7J7LV8F77:00000006 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:19.6398418+07:00 0HLK7J7LV8F77:00000006 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:09:19.6399122+07:00 0HLK7J7LV8F77:00000006 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0071ms. (50a9e262)
+2019-02-01T00:09:19.6399924+07:00 0HLK7J7LV8F77:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:09:19.6415063+07:00 0HLK7J7LV8F77:00000006 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:19.6431574+07:00 0HLK7J7LV8F77:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:09:19.6453910+07:00 0HLK7J7LV8F77:00000006 [INF] Executed ViewResult - view "Index" executed in 5.4124ms. (f66409e9)
+2019-02-01T00:09:19.6454614+07:00 0HLK7J7LV8F77:00000006 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 5.7589ms (afa2e885)
+2019-02-01T00:09:19.6743221+07:00 0HLK7J7LV8F77:00000006 [INF] Request finished in 35.7875ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:09:19.7235686+07:00 0HLK7J7LV8F76:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-01T00:09:19.7236226+07:00 0HLK7J7LV8F75:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-02-01T00:09:19.7240642+07:00 0HLK7J7LV8F74:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css   (ca22a1cb)
+2019-02-01T00:09:19.7241403+07:00 0HLK7J7LV8F76:00000008 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2019-02-01T00:09:19.7241773+07:00 0HLK7J7LV8F75:00000009 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2019-02-01T00:09:19.7242097+07:00 0HLK7J7LV8F76:00000008 [INF] Request finished in 0.7104ms 200 text/css (791a596a)
+2019-02-01T00:09:19.7242328+07:00 0HLK7J7LV8F75:00000009 [INF] Request finished in 0.7443ms 200 text/css (791a596a)
+2019-02-01T00:09:19.7244215+07:00 0HLK7J7LV8F6U:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.css   (ca22a1cb)
+2019-02-01T00:09:19.7249201+07:00 0HLK7J7LV8F74:0000000C [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css"' (27b0a520)
+2019-02-01T00:09:19.7249859+07:00 0HLK7J7LV8F74:0000000C [INF] Request finished in 0.9468ms 200 text/css (791a596a)
+2019-02-01T00:09:19.7250476+07:00 0HLK7J7LV8F72:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/style.bundle.css   (ca22a1cb)
+2019-02-01T00:09:19.7256686+07:00 0HLK7J7LV8F70:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user4.jpg   (ca22a1cb)
+2019-02-01T00:09:19.7260958+07:00 0HLK7J7LV8F6V:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/logo.png   (ca22a1cb)
+2019-02-01T00:09:19.7261744+07:00 0HLK7J7LV8F70:0000000D [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user4.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user4.jpg"' (27b0a520)
+2019-02-01T00:09:19.7262454+07:00 0HLK7J7LV8F70:0000000D [INF] Request finished in 0.6035ms 200 image/jpeg (791a596a)
+2019-02-01T00:09:19.7264844+07:00 0HLK7J7LV8F6V:0000000B [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/logo.png"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\logo.png"' (27b0a520)
+2019-02-01T00:09:19.7265435+07:00 0HLK7J7LV8F6V:0000000B [INF] Request finished in 0.4611ms 200 image/png (791a596a)
+2019-02-01T00:09:19.7269430+07:00 0HLK7J7LV8F6U:0000000D [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.css"' (27b0a520)
+2019-02-01T00:09:19.7270108+07:00 0HLK7J7LV8F6U:0000000D [INF] Request finished in 2.6006ms 200 text/css (791a596a)
+2019-02-01T00:09:19.7521934+07:00 0HLK7J7LV8F72:0000000A [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/style.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\style.bundle.css"' (27b0a520)
+2019-02-01T00:09:19.7523569+07:00 0HLK7J7LV8F72:0000000A [INF] Request finished in 27.2999ms 200 text/css (791a596a)
+2019-02-01T00:09:19.8979335+07:00 0HLK7J7LV8F73:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-01T00:09:19.8979381+07:00 0HLK7J7LV8F78:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-01T00:09:19.8993703+07:00 0HLK7J7LV8F73:0000000E [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-01T00:09:19.8994819+07:00 0HLK7J7LV8F73:0000000E [INF] Request finished in 1.574ms 200 application/javascript (791a596a)
+2019-02-01T00:09:19.9003408+07:00 0HLK7J7LV8F78:00000007 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-01T00:09:19.9004225+07:00 0HLK7J7LV8F78:00000007 [INF] Request finished in 2.5296ms 200 application/javascript (791a596a)
+2019-02-01T00:09:19.9081087+07:00 0HLK7J7LV8F71:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/mustache/mustache.js   (ca22a1cb)
+2019-02-01T00:09:19.9088053+07:00 0HLK7J7LV8F71:0000000C [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-02-01T00:09:19.9088870+07:00 0HLK7J7LV8F71:0000000C [INF] Request finished in 0.8327ms 200 application/javascript (791a596a)
+2019-02-01T00:09:19.9147889+07:00 0HLK7J7LV8F77:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-01T00:09:19.9149745+07:00 0HLK7J7LV8F76:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-01T00:09:19.9188227+07:00 0HLK7J7LV8F76:00000009 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-01T00:09:19.9189636+07:00 0HLK7J7LV8F76:00000009 [INF] Request finished in 3.9947ms 200 application/javascript (791a596a)
+2019-02-01T00:09:19.9191327+07:00 0HLK7J7LV8F77:00000007 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-01T00:09:19.9191949+07:00 0HLK7J7LV8F77:00000007 [INF] Request finished in 4.4645ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0066092+07:00 0HLK7J7LV8F6V:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-01T00:09:20.0067504+07:00 0HLK7J7LV8F74:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-01T00:09:20.0073329+07:00 0HLK7J7LV8F70:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-01T00:09:20.0073462+07:00 0HLK7J7LV8F74:0000000D [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-02-01T00:09:20.0074105+07:00 0HLK7J7LV8F74:0000000D [INF] Request finished in 0.7844ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0074346+07:00 0HLK7J7LV8F6V:0000000C [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-02-01T00:09:20.0074799+07:00 0HLK7J7LV8F6V:0000000C [INF] Request finished in 1.1612ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0078141+07:00 0HLK7J7LV8F70:0000000E [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-02-01T00:09:20.0078788+07:00 0HLK7J7LV8F70:0000000E [INF] Request finished in 0.5649ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0080073+07:00 0HLK7J7LV8F75:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-02-01T00:09:20.0091296+07:00 0HLK7J7LV8F6U:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-01T00:09:20.0096632+07:00 0HLK7J7LV8F72:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/moment/moment.js   (ca22a1cb)
+2019-02-01T00:09:20.0104235+07:00 0HLK7J7LV8F73:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.js?v=gq1Lj7PHUNjW436RsYipn4esfDlfCTwXeToHSdniBLI   (ca22a1cb)
+2019-02-01T00:09:20.0107673+07:00 0HLK7J7LV8F6U:0000000E [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-01T00:09:20.0108727+07:00 0HLK7J7LV8F6U:0000000E [INF] Request finished in 1.7421ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0118885+07:00 0HLK7J7LV8F72:0000000B [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-01T00:09:20.0122812+07:00 0HLK7J7LV8F72:0000000B [INF] Request finished in 2.6114ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0140326+07:00 0HLK7J7LV8F78:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/scripts.bundle.js?v=4eWUzQd3jwH7kuvJC1Ob80BkG4HgXyaAOF2jJy-M7SU   (ca22a1cb)
+2019-02-01T00:09:20.0159999+07:00 0HLK7J7LV8F75:0000000A [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-02-01T00:09:20.0160873+07:00 0HLK7J7LV8F75:0000000A [INF] Request finished in 8.0804ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0182108+07:00 0HLK7J7LV8F78:00000008 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/scripts.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\scripts.bundle.js"' (27b0a520)
+2019-02-01T00:09:20.0183028+07:00 0HLK7J7LV8F78:00000008 [INF] Request finished in 4.3268ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0288056+07:00 0HLK7J7LV8F71:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-02-01T00:09:20.0293782+07:00 0HLK7J7LV8F71:0000000D [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-02-01T00:09:20.0294399+07:00 0HLK7J7LV8F71:0000000D [INF] Request finished in 0.7237ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0312545+07:00 0HLK7J7LV8F76:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=xjVO5WwzBX7mTaTxaccZNzRxwq7LSGftG7RYAhQGG_g   (ca22a1cb)
+2019-02-01T00:09:20.0320148+07:00 0HLK7J7LV8F76:0000000A [INF] Sending file. Request path: '"/admin-app/shared/be.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\shared\be.js"' (27b0a520)
+2019-02-01T00:09:20.0321176+07:00 0HLK7J7LV8F76:0000000A [INF] Request finished in 0.8918ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0341903+07:00 0HLK7J7LV8F77:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=4waXjQ9TTmLbG-C26OMLIWu9Z1fJsMvQMPz0gs7NG6o   (ca22a1cb)
+2019-02-01T00:09:20.0349814+07:00 0HLK7J7LV8F77:00000008 [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:09:20.0350487+07:00 0HLK7J7LV8F77:00000008 [INF] Request finished in 0.9556ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.0395560+07:00 0HLK7J7LV8F74:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-02-01T00:09:20.0401236+07:00 0HLK7J7LV8F74:0000000E [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user3.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user3.jpg"' (27b0a520)
+2019-02-01T00:09:20.0401924+07:00 0HLK7J7LV8F74:0000000E [INF] Request finished in 0.7772ms 200 image/jpeg (791a596a)
+2019-02-01T00:09:20.0888741+07:00 0HLK7J7LV8F70:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2?v=1.1.   (ca22a1cb)
+2019-02-01T00:09:20.0890551+07:00 0HLK7J7LV8F72:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff   (ca22a1cb)
+2019-02-01T00:09:20.0898477+07:00 0HLK7J7LV8F72:0000000C [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\flaticon\Flaticon.woff"' (27b0a520)
+2019-02-01T00:09:20.0899320+07:00 0HLK7J7LV8F72:0000000C [INF] Request finished in 0.9278ms 200 application/font-woff (791a596a)
+2019-02-01T00:09:20.0900764+07:00 0HLK7J7LV8F70:0000000F [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\line-awesome\line-awesome.woff2"' (27b0a520)
+2019-02-01T00:09:20.0902661+07:00 0HLK7J7LV8F70:0000000F [INF] Request finished in 1.4455ms 200 font/woff2 (791a596a)
+2019-02-01T00:09:20.1161705+07:00 0HLK7J7LV8F73:0000000F [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.js"' (27b0a520)
+2019-02-01T00:09:20.1193242+07:00 0HLK7J7LV8F73:0000000F [INF] Request finished in 108.6643ms 200 application/javascript (791a596a)
+2019-02-01T00:09:20.5987666+07:00 0HLK7J7LV8F6V:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:09:20.5999166+07:00 0HLK7J7LV8F6V:0000000D [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:20.6000558+07:00 0HLK7J7LV8F6V:0000000D [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:20.6003478+07:00 0HLK7J7LV8F6V:0000000D [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:09:20.6007441+07:00 0HLK7J7LV8F6V:0000000D [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:20.6016098+07:00 0HLK7J7LV8F6V:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:09:20.6028338+07:00 0HLK7J7LV8F6V:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:09:20.6033473+07:00 0HLK7J7LV8F6V:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:09:20.6036167+07:00 0HLK7J7LV8F6V:0000000D [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.1748ms. (50a9e262)
+2019-02-01T00:09:20.6037452+07:00 0HLK7J7LV8F6V:0000000D [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:09:20.6041364+07:00 0HLK7J7LV8F6V:0000000D [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 4.133ms (afa2e885)
+2019-02-01T00:09:20.6043821+07:00 0HLK7J7LV8F6V:0000000D [INF] Request finished in 5.6541ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:20.6314477+07:00 0HLK7J7LV8F6U:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:09:20.6325956+07:00 0HLK7J7LV8F6U:0000000F [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:20.6327400+07:00 0HLK7J7LV8F6U:0000000F [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:20.6329981+07:00 0HLK7J7LV8F6U:0000000F [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:09:20.6335826+07:00 0HLK7J7LV8F6U:0000000F [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:20.6351797+07:00 0HLK7J7LV8F6U:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:09:20.6365251+07:00 0HLK7J7LV8F6U:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:09:20.6371038+07:00 0HLK7J7LV8F6U:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:09:20.6374220+07:00 0HLK7J7LV8F6U:0000000F [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.3509ms. (50a9e262)
+2019-02-01T00:09:20.6375567+07:00 0HLK7J7LV8F6U:0000000F [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:09:20.6379093+07:00 0HLK7J7LV8F6U:0000000F [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 5.2325ms (afa2e885)
+2019-02-01T00:09:20.6382733+07:00 0HLK7J7LV8F6U:0000000F [INF] Request finished in 6.858ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:20.8217164+07:00 0HLK7J7LV8F76:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:09:20.8225836+07:00 0HLK7J7LV8F76:0000000B [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:09:20.8226571+07:00 0HLK7J7LV8F76:0000000B [INF] Request finished in 0.9823ms 200 image/x-icon (791a596a)
+2019-02-01T00:09:22.1850155+07:00 0HLK7J7LV8F71:0000000E [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:09:22.1873195+07:00 0HLK7J7LV8F71:0000000E [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:22.1874804+07:00 0HLK7J7LV8F71:0000000E [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:22.1881466+07:00 0HLK7J7LV8F71:0000000E [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:09:22.1882895+07:00 0HLK7J7LV8F71:0000000E [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0071ms. (50a9e262)
+2019-02-01T00:09:22.1884854+07:00 0HLK7J7LV8F71:0000000E [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:09:22.1887434+07:00 0HLK7J7LV8F71:0000000E [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 1.3164ms (afa2e885)
+2019-02-01T00:09:22.1888678+07:00 0HLK7J7LV8F71:0000000E [INF] Request finished in 3.9417ms 400 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:31.5393129+07:00 0HLK7J7LV8F78:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/province/index   (ca22a1cb)
+2019-02-01T00:09:31.5402181+07:00 0HLK7J7LV8F78:00000009 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:31.5403374+07:00 0HLK7J7LV8F78:00000009 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:31.5404628+07:00 0HLK7J7LV8F78:00000009 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" - Validation state: Valid (dad538d7)
+2019-02-01T00:09:31.5405312+07:00 0HLK7J7LV8F78:00000009 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0082ms. (50a9e262)
+2019-02-01T00:09:31.5406211+07:00 0HLK7J7LV8F78:00000009 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-02-01T00:09:31.5414904+07:00 0HLK7J7LV8F78:00000009 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:31.5445110+07:00 0HLK7J7LV8F78:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-02-01T00:09:31.5465826+07:00 0HLK7J7LV8F78:00000009 [INF] Executed ViewResult - view "Index" executed in 5.9815ms. (f66409e9)
+2019-02-01T00:09:31.5466479+07:00 0HLK7J7LV8F78:00000009 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.Index (BeCoreApp.Web)" in 6.3742ms (afa2e885)
+2019-02-01T00:09:31.5758397+07:00 0HLK7J7LV8F78:00000009 [INF] Request finished in 36.5339ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-01T00:09:31.6165262+07:00 0HLK7J7LV8F77:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-02-01T00:09:31.6165262+07:00 0HLK7J7LV8F74:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-01T00:09:31.6170618+07:00 0HLK7J7LV8F77:00000009 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2019-02-01T00:09:31.6170757+07:00 0HLK7J7LV8F74:0000000F [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2019-02-01T00:09:31.6171173+07:00 0HLK7J7LV8F74:0000000F [INF] Request finished in 0.6379ms 200 text/css (791a596a)
+2019-02-01T00:09:31.6171163+07:00 0HLK7J7LV8F77:00000009 [INF] Request finished in 0.6358ms 200 text/css (791a596a)
+2019-02-01T00:09:31.6176797+07:00 0HLK7J7LV8F75:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/logo.png   (ca22a1cb)
+2019-02-01T00:09:31.6176756+07:00 0HLK7J7LV8F72:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.css   (ca22a1cb)
+2019-02-01T00:09:31.6177085+07:00 0HLK7J7LV8F70:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css   (ca22a1cb)
+2019-02-01T00:09:31.6180422+07:00 0HLK7J7LV8F75:0000000B [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/logo.png"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\logo.png"' (27b0a520)
+2019-02-01T00:09:31.6180560+07:00 0HLK7J7LV8F70:00000010 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css"' (27b0a520)
+2019-02-01T00:09:31.6180992+07:00 0HLK7J7LV8F70:00000010 [INF] Request finished in 0.3989ms 200 text/css (791a596a)
+2019-02-01T00:09:31.6180941+07:00 0HLK7J7LV8F75:0000000B [INF] Request finished in 0.4287ms 200 image/png (791a596a)
+2019-02-01T00:09:31.6194420+07:00 0HLK7J7LV8F73:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user4.jpg   (ca22a1cb)
+2019-02-01T00:09:31.6198712+07:00 0HLK7J7LV8F73:00000010 [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user4.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user4.jpg"' (27b0a520)
+2019-02-01T00:09:31.6199247+07:00 0HLK7J7LV8F73:00000010 [INF] Request finished in 0.5577ms 200 image/jpeg (791a596a)
+2019-02-01T00:09:31.6207435+07:00 0HLK7J7LV8F72:0000000D [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.css"' (27b0a520)
+2019-02-01T00:09:31.6208067+07:00 0HLK7J7LV8F72:0000000D [INF] Request finished in 3.1388ms 200 text/css (791a596a)
+2019-02-01T00:09:31.6225767+07:00 0HLK7J7LV8F6V:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/style.bundle.css   (ca22a1cb)
+2019-02-01T00:09:31.6429081+07:00 0HLK7J7LV8F6V:0000000E [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/style.bundle.css"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\style.bundle.css"' (27b0a520)
+2019-02-01T00:09:31.6430042+07:00 0HLK7J7LV8F6V:0000000E [INF] Request finished in 20.6465ms 200 text/css (791a596a)
+2019-02-01T00:09:31.8964792+07:00 0HLK7J7LV8F76:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-01T00:09:31.8964792+07:00 0HLK7J7LV8F6U:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-01T00:09:31.8976425+07:00 0HLK7J7LV8F76:0000000C [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-01T00:09:31.8978883+07:00 0HLK7J7LV8F76:0000000C [INF] Request finished in 1.3231ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.8992917+07:00 0HLK7J7LV8F6U:00000010 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-01T00:09:31.8993647+07:00 0HLK7J7LV8F6U:00000010 [INF] Request finished in 2.9198ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9347487+07:00 0HLK7J7LV8F71:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/mustache/mustache.js   (ca22a1cb)
+2019-02-01T00:09:31.9349234+07:00 0HLK7J7LV8F78:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-01T00:09:31.9352591+07:00 0HLK7J7LV8F70:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/base/scripts.bundle.js?v=4eWUzQd3jwH7kuvJC1Ob80BkG4HgXyaAOF2jJy-M7SU   (ca22a1cb)
+2019-02-01T00:09:31.9353419+07:00 0HLK7J7LV8F78:0000000A [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-02-01T00:09:31.9353876+07:00 0HLK7J7LV8F78:0000000A [INF] Request finished in 0.5006ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9354822+07:00 0HLK7J7LV8F74:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-01T00:09:31.9356560+07:00 0HLK7J7LV8F75:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-01T00:09:31.9358400+07:00 0HLK7J7LV8F74:00000010 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-02-01T00:09:31.9358801+07:00 0HLK7J7LV8F74:00000010 [INF] Request finished in 0.4071ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9359644+07:00 0HLK7J7LV8F77:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/vendors.bundle.js?v=gq1Lj7PHUNjW436RsYipn4esfDlfCTwXeToHSdniBLI   (ca22a1cb)
+2019-02-01T00:09:31.9360117+07:00 0HLK7J7LV8F73:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-02-01T00:09:31.9363659+07:00 0HLK7J7LV8F71:0000000F [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-02-01T00:09:31.9364096+07:00 0HLK7J7LV8F71:0000000F [INF] Request finished in 1.7154ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9372593+07:00 0HLK7J7LV8F75:0000000C [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-01T00:09:31.9373045+07:00 0HLK7J7LV8F75:0000000C [INF] Request finished in 1.6604ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9388632+07:00 0HLK7J7LV8F70:00000011 [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/base/scripts.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\base\scripts.bundle.js"' (27b0a520)
+2019-02-01T00:09:31.9389449+07:00 0HLK7J7LV8F70:00000011 [INF] Request finished in 3.695ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9421701+07:00 0HLK7J7LV8F6V:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/shared/be.js?v=xjVO5WwzBX7mTaTxaccZNzRxwq7LSGftG7RYAhQGG_g   (ca22a1cb)
+2019-02-01T00:09:31.9421834+07:00 0HLK7J7LV8F72:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-02-01T00:09:31.9426816+07:00 0HLK7J7LV8F76:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-app/controllers/province/index.js?v=QruC8ssX5ar4o-cL8Exos0PsOyrDv5IPWeBpC9i3T7c   (ca22a1cb)
+2019-02-01T00:09:31.9426924+07:00 0HLK7J7LV8F72:0000000E [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-02-01T00:09:31.9427392+07:00 0HLK7J7LV8F72:0000000E [INF] Request finished in 0.6271ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9430347+07:00 0HLK7J7LV8F6V:0000000F [INF] Sending file. Request path: '"/admin-app/shared/be.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\shared\be.js"' (27b0a520)
+2019-02-01T00:09:31.9430862+07:00 0HLK7J7LV8F6V:0000000F [INF] Request finished in 0.9432ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9431360+07:00 0HLK7J7LV8F76:0000000D [INF] Sending file. Request path: '"/admin-app/controllers/province/index.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-app\controllers\province\index.js"' (27b0a520)
+2019-02-01T00:09:31.9431885+07:00 0HLK7J7LV8F76:0000000D [INF] Request finished in 0.5227ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9492404+07:00 0HLK7J7LV8F6U:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/moment/moment.js   (ca22a1cb)
+2019-02-01T00:09:31.9501303+07:00 0HLK7J7LV8F73:00000011 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-02-01T00:09:31.9501837+07:00 0HLK7J7LV8F73:00000011 [INF] Request finished in 14.1781ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9511146+07:00 0HLK7J7LV8F6U:00000011 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-01T00:09:31.9511614+07:00 0HLK7J7LV8F6U:00000011 [INF] Request finished in 1.9909ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9718702+07:00 0HLK7J7LV8F71:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-01T00:09:31.9729692+07:00 0HLK7J7LV8F71:00000010 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-01T00:09:31.9730345+07:00 0HLK7J7LV8F71:00000010 [INF] Request finished in 1.2039ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9735409+07:00 0HLK7J7LV8F6V:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-01T00:09:31.9735815+07:00 0HLK7J7LV8F76:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/app/media/img/users/user3.jpg   (ca22a1cb)
+2019-02-01T00:09:31.9739727+07:00 0HLK7J7LV8F76:0000000E [INF] Sending file. Request path: '"/admin-side/metronic/assets/app/media/img/users/user3.jpg"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\app\media\img\users\user3.jpg"' (27b0a520)
+2019-02-01T00:09:31.9740303+07:00 0HLK7J7LV8F76:0000000E [INF] Request finished in 0.4523ms 200 image/jpeg (791a596a)
+2019-02-01T00:09:31.9741516+07:00 0HLK7J7LV8F72:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-01T00:09:31.9745566+07:00 0HLK7J7LV8F72:0000000F [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-02-01T00:09:31.9746147+07:00 0HLK7J7LV8F72:0000000F [INF] Request finished in 0.4811ms 200 application/javascript (791a596a)
+2019-02-01T00:09:31.9777608+07:00 0HLK7J7LV8F6V:00000010 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-01T00:09:31.9778441+07:00 0HLK7J7LV8F6V:00000010 [INF] Request finished in 4.3134ms 200 application/javascript (791a596a)
+2019-02-01T00:09:32.1125998+07:00 0HLK7J7LV8F77:0000000A [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/vendors.bundle.js"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\vendors.bundle.js"' (27b0a520)
+2019-02-01T00:09:32.1127068+07:00 0HLK7J7LV8F77:0000000A [INF] Request finished in 176.7418ms 200 application/javascript (791a596a)
+2019-02-01T00:09:32.2984127+07:00 0HLK7J7LV8F78:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2?v=1.1.   (ca22a1cb)
+2019-02-01T00:09:32.2984127+07:00 0HLK7J7LV8F74:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff   (ca22a1cb)
+2019-02-01T00:09:32.3000900+07:00 0HLK7J7LV8F78:0000000B [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/line-awesome/line-awesome.woff2"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\line-awesome\line-awesome.woff2"' (27b0a520)
+2019-02-01T00:09:32.3001861+07:00 0HLK7J7LV8F78:0000000B [INF] Request finished in 1.8043ms 200 font/woff2 (791a596a)
+2019-02-01T00:09:32.3003763+07:00 0HLK7J7LV8F74:00000011 [INF] Sending file. Request path: '"/admin-side/metronic/assets/vendors/base/fonts/flaticon/Flaticon.woff"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\vendors\base\fonts\flaticon\Flaticon.woff"' (27b0a520)
+2019-02-01T00:09:32.3004555+07:00 0HLK7J7LV8F74:00000011 [INF] Request finished in 2.0695ms 200 application/font-woff (791a596a)
+2019-02-01T00:09:32.6626104+07:00 0HLK7J7LV8F75:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:09:32.6634447+07:00 0HLK7J7LV8F75:0000000D [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:32.6635541+07:00 0HLK7J7LV8F75:0000000D [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:32.6637814+07:00 0HLK7J7LV8F75:0000000D [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:09:32.6641674+07:00 0HLK7J7LV8F75:0000000D [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:32.6654587+07:00 0HLK7J7LV8F75:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:09:32.6675565+07:00 0HLK7J7LV8F75:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:09:32.6706172+07:00 0HLK7J7LV8F75:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:09:32.6708311+07:00 0HLK7J7LV8F75:0000000D [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.9885ms. (50a9e262)
+2019-02-01T00:09:32.6709370+07:00 0HLK7J7LV8F75:0000000D [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:09:32.6712526+07:00 0HLK7J7LV8F75:0000000D [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 7.7432ms (afa2e885)
+2019-02-01T00:09:32.6715389+07:00 0HLK7J7LV8F75:0000000D [INF] Request finished in 8.9646ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:32.6898240+07:00 0HLK7J7LV8F72:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin/Province/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-02-01T00:09:32.6908176+07:00 0HLK7J7LV8F72:00000010 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:32.6909111+07:00 0HLK7J7LV8F72:00000010 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:32.6911903+07:00 0HLK7J7LV8F72:00000010 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2019-02-01T00:09:32.6915763+07:00 0HLK7J7LV8F72:00000010 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=BeCoreApp.Data.EF " (9958f5bb)
+2019-02-01T00:09:32.6922780+07:00 0HLK7J7LV8F72:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Provinces] AS [p]" (0723d8ff)
+2019-02-01T00:09:32.6933514+07:00 0HLK7J7LV8F72:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Status], [x].[DateCreated], [x].[DateModified]
+FROM [Provinces] AS [x]
+ORDER BY [x].[DateCreated] DESC, [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-02-01T00:09:32.6939493+07:00 0HLK7J7LV8F72:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [x.Districts].[Id] AS [Id0], [x.Districts].[Name], [x.Districts].[ProvinceId], [x.Districts].[Status], [x.Districts].[DateCreated] AS [DateCreated0], [x.Districts].[DateModified]
+FROM [Districts] AS [x.Districts]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id]
+    FROM [Provinces] AS [x0]
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.Districts].[ProvinceId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [x.Districts].[Id]" (0723d8ff)
+2019-02-01T00:09:32.6942330+07:00 0HLK7J7LV8F72:00000010 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.9532ms. (50a9e262)
+2019-02-01T00:09:32.6943446+07:00 0HLK7J7LV8F72:00000010 [INF] Executing ObjectResult, writing value of type '"BeCoreApp.Utilities.Dtos.PagedResult`1[[BeCoreApp.Application.ViewModels.Location.ProvinceViewModel, BeCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-02-01T00:09:32.6946674+07:00 0HLK7J7LV8F72:00000010 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.GetAllPaging (BeCoreApp.Web)" in 3.7829ms (afa2e885)
+2019-02-01T00:09:32.6949465+07:00 0HLK7J7LV8F72:00000010 [INF] Request finished in 5.1467ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-01T00:09:32.8806098+07:00 0HLK7J7LV8F76:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44396/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico   (ca22a1cb)
+2019-02-01T00:09:32.8819623+07:00 0HLK7J7LV8F76:0000000F [INF] Sending file. Request path: '"/admin-side/metronic/assets/demo/default/media/img/logo/favicon.ico"'. Physical path: '"C:\TongHop\BE\BeCoreApp\BeCoreApp.Web\wwwroot\admin-side\metronic\assets\demo\default\media\img\logo\favicon.ico"' (27b0a520)
+2019-02-01T00:09:32.8823165+07:00 0HLK7J7LV8F76:0000000F [INF] Request finished in 1.6465ms 200 image/x-icon (791a596a)
+2019-02-01T00:09:34.6229586+07:00 0HLK7J7LV8F71:00000011 [INF] Request starting HTTP/1.1 POST http://localhost:44396/Admin/Province/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2019-02-01T00:09:34.6238941+07:00 0HLK7J7LV8F71:00000011 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"Province\"}". Executing action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" (a44c0341)
+2019-02-01T00:09:34.6239836+07:00 0HLK7J7LV8F71:00000011 [INF] Authorization was successful. (0d575a54)
+2019-02-01T00:09:34.6243311+07:00 0HLK7J7LV8F71:00000011 [INF] Executing action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" with arguments (["BeCoreApp.Application.ViewModels.Location.ProvinceViewModel"]) - Validation state: Invalid (4e3479ed)
+2019-02-01T00:09:34.6243912+07:00 0HLK7J7LV8F71:00000011 [INF] Executed action method "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0051ms. (50a9e262)
+2019-02-01T00:09:34.6244673+07:00 0HLK7J7LV8F71:00000011 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2019-02-01T00:09:34.6245871+07:00 0HLK7J7LV8F71:00000011 [INF] Executed action "BeCoreApp.Areas.Admin.Controllers.ProvinceController.SaveEntity (BeCoreApp.Web)" in 0.6379ms (afa2e885)
+2019-02-01T00:09:34.6246796+07:00 0HLK7J7LV8F71:00000011 [INF] Request finished in 1.7436ms 400 application/json; charset=utf-8 (791a596a)

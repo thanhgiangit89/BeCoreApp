@@ -1,0 +1,26 @@
+﻿@model Boolean
+@if (Model)
+{
+    @Html.DropDownList("WardId", (SelectList)ViewBag.WardId, "", new { @class = "form-control m-select2" })
+    <script>
+        $(function () {
+            $('#WardId').select2({
+                placeholder: "Chọn xã/phường",
+                allowClear: true,
+            });
+        })
+    </script>
+}
+else
+{
+    @Html.DropDownList("WardSearch", (SelectList)ViewBag.WardId, "", new { @class = "form-control m-select2" })
+    <script>
+        $(function () {
+            $('#WardSearch').select2({
+                placeholder: "Chọn xã/phường",
+                allowClear: true,
+            });
+        })
+    </script>
+}
+

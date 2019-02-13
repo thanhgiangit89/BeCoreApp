@@ -1,6 +1,6 @@
 using System;
 
-namespace BeCoreApp.Web.Models
+namespace BeCoreApp.Models
 {
     public class ErrorViewModel
     {

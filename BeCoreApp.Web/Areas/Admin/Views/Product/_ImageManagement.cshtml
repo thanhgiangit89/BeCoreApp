@@ -1,0 +1,35 @@
+﻿<div id="modal-image-manage" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Quản lý hình ảnh
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="frmMaintainance">
+                    <div class="form-group">
+                        <label class="form-control-label">Ảnh đã chọn</label>
+                        <input type="hidden" id="hidId" value="" />
+                        <div id="image-list" class="col-md-12"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtName" class="form-control-label">Chọn ảnh</label>
+                        <div class="input-group">
+                            <input type="file" id="fileImage" multiple/>
+                        </div><!-- /input-group -->
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancel" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" id="btnSaveImages" class="btn btn-success">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
